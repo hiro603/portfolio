@@ -1,0 +1,67 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-contact
+------------------------------
+*/
+.top-contact {
+
+}
+
+.top-contact-title {
+
+}
+
+.top-contact-form {
+    margin-top: 40rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24rem;
+
+
+    @include g.mq() {
+        margin-top: 60rem;
+        gap: 32rem;
+        grid-template-columns: auto 1fr;
+        padding-inline: 200rem;
+
+    }
+}
+
+.top-contact-form-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6rem;
+
+    @include g.mq() {
+        grid-template-columns: subgrid;
+        grid-column: -1 / 1;
+        align-items: start;
+        gap: 64rem;
+    }
+}
+
+.top-contact-form-item-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include g.mq() {
+        justify-content: flex-start;
+        gap: 8rem;
+        margin-top: 14rem;
+    }
+}
+
+.top-contact-form-item-label-text {
+
+}
+
+.top-contact-form-button {
+    margin-inline: auto;
+
+    gap: 16rem;
+    @include g.mq() {
+        grid-column: 1 / 3;
+    }
+}

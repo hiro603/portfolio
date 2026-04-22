@@ -1,0 +1,16 @@
+@use "../global" as g;
+
+/*!
+component > cards
+------------------------------
+*/
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24rem;
+
+    @include g.mq() {
+        flex-direction: row;
+        gap: 40rem;
+    }
+}

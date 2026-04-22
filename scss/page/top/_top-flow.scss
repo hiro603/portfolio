@@ -1,0 +1,86 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-flow
+------------------------------
+*/
+.top-flow {
+    background-color: var(--color-gray-light);
+}
+
+.top-flow-title {
+
+}
+
+.top-flow-list {
+    margin-top: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+
+
+    @include g.mq() {
+        margin-top: 60rem;
+        flex-direction: row;
+        gap: 40rem;
+    }
+}
+
+.top-flow-item {
+    text-align: center;
+    background-color: var(--color-white);
+    width: 210rem;
+    height: 40rem;
+    position: relative;
+    display: inline-block;
+    padding-block: 36rem;
+
+    @include g.mq() {
+        &:not(:last-child)::before {
+            content: "";
+            height: 20rem;
+            aspect-ratio: cos(50deg);
+            clip-path: polygon(0 0,100% 50%,0 100%);
+            background: var(--color-gray-light);
+            position: absolute;
+            top: 47%;
+            right: -13rem;
+            z-index: 2;
+        }
+    
+        &:not(:last-child)::after {
+            content: "";
+            height: 30rem;
+            aspect-ratio: cos(50deg);
+            clip-path: polygon(0 0,100% 50%,0 100%);
+            background: var(--color-white);
+            position: absolute;
+            top: 40%;
+            right: -18rem;
+            z-index: 1;
+        }
+    }
+    
+}
+
+.top-flow-item-number {
+    font-size: 40rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    display: block;
+    position: absolute;
+    top: -34rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-family-en);
+}
+
+.top-flow-item-text {
+    display: block;
+    font-weight: 500;
+    font-size: 20rem;
+    line-height: 1;
+}
+

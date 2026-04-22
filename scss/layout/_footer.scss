@@ -1,0 +1,33 @@
+@use "../global" as g;
+
+/*!
+layout > footer
+------------------------------
+*/
+.footer {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+    padding: 32rem;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 20rem;
+    font-weight: bold;
+    line-height: 1;
+
+    @include g.mq() {
+        font-size: 28rem;
+    }
+}
+
+.footer-copyright {
+    font-size: 12rem;
+    margin-top: 12rem;
+    display: block;
+
+    @include g.mq() {
+        margin-top: 16rem;
+    }
+}
+

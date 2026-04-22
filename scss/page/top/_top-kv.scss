@@ -1,0 +1,32 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-kv
+------------------------------
+*/
+.manivisual {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(../img/mv.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.manivisual-text {
+    position: absolute;
+    font-weight: bold;
+    font-size: 36rem;
+    top: 50%;
+    left: 20rem;
+    font-family: var(--font-family-en);
+    letter-spacing: 0.1em;
+    
+    @include g.mq() {
+        top: 350rem;
+        left: 65rem;
+        font-size: 96rem;
+    }
+    
+}
+

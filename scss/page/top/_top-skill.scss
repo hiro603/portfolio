@@ -1,0 +1,44 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-skill
+------------------------------
+*/
+.top-skill {
+
+}
+
+.top-skill-title {
+
+}
+
+.top-skill-list {
+    margin-top: 40rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20rem;
+
+    @include g.mq() {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40rem;
+        margin-top: 60rem;
+    }
+}
+
+.top-skill-item {
+    background-color: var(--color-gray-light);
+    border-radius: 100vh;
+    padding: 20rem;
+    display: grid;
+    place-items: center;
+    box-shadow: 10rem 10rem 5rem 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.top-skill-item-text {
+    font-size: 22rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-family: var(--font-family-en);
+}
+

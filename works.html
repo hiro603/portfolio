@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Portfolio</title>
+        <meta name="description" content="ページの説明" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+
+        <!-- favicon/webclipicon -->
+        <link rel="icon" href="img/favicon.ico" />
+        <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="img/webclip.png" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <!-- css -->
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- js -->
+         <script src="./js/vendor/gsap.min.js" defer></script>
+         <script src="./js/vendor/ScrollTrigger.min.js" defer></script>
+        <script type="module" src="./js/main.js"></script>
+
+        <!-- noindex -->
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <div class="l-header js-header">
+            <div class="l-header-logo">
+                <a href="index.html" class="l-header-logo-link">
+                    <span class="l-header-logo-link-en l-header-logo-white">hiro</span>
+                    <span class="l-header-logo-link-en l-header-logo-black">hiro</span>
+                    <span class="l-header-logo-link-ja l-header-logo-white">Frontend Developer</span>
+                    <span class="l-header-logo-link-ja l-header-logo-black">Frontend Developer</span>
+                </a>
+            </div><!-- /.l-header-logo -->
+            <dialog class="l-header-menu js-header-menu" aria-label="メニュー">
+                <button class="l-header-menu-close js-header-menu-close" aria-label="メニューを閉じる">
+                    <img src='./img/icon-cross.svg' width='50' height='50' alt='メニューを閉じる' decoding='async' />
+                </button>
+                <nav class="l-header-menu-nav">
+                    <ul class="l-header-menu-nav-list">
+                        <li class="l-header-menu-nav-item">
+                            <a href="#work" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">Work</span>
+                                <span class="l-header-menu-nav-link-ja">お仕事</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="#about" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">ABOUT</span>
+                                <span class="l-header-menu-nav-link-ja">私について</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="#skill" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">skill</span>
+                                <span class="l-header-menu-nav-link-ja">技術</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="#flow" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">flow</span>
+                                <span class="l-header-menu-nav-link-ja">制作の流れ</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="#contact" class="l-header-menu-nav-link u-text-hover l-header-menu-nav-link--contact">
+                                <span class="l-header-menu-nav-link-en">CONTACT</span>
+                                <span class="l-header-menu-nav-link-ja">お問い合わせ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </dialog><!-- / -->
+            <button class="l-header-menu-open js-header-menu-open" aria-label="メニューを開く">
+                <img src='./img/icon-dots.svg' width='50' height='50' alt='メニューを開く' decoding='async' />
+            </button>
+        </div><!-- /.l-header -->
+        <main>
+            <section class="works-kv">
+                <div class="works-kv-content">
+                    <div class="works-kv-meta">
+                        <ul class="works-kv-meta-list">
+                            <li class="works-kv-meta-item">
+                                <a href="./index.html">HOME</a>
+                            </li>
+                            <li class="works-kv-meta-item">
+                                <a href="./works.html">WORK</a>
+                            </li>
+                            <li class="works-kv-meta-item">
+                                <span class="works-kv-meta-item-text">コーポレートサイト制作</span>
+                            </li>
+                        </ul>
+                    </div><!-- / -->
+
+                    <div class="works-kv-title-link">
+                        <span class="works-kv-title-en">WORKS DETAIL</span>
+                        <h2 class="works-kv-title-ja">コーポレートサイト制作</h2>
+                    </div><!-- /.works-kv-title-link -->
+
+                    <p class="works-kv-text">金属加工会社のコーポレートサイト制作しました。</p><!-- / -->
+
+                    <div class="works-kv-tag">
+                        <span class="works-kv-tag-item">Design</span>
+                        <span class="works-kv-tag-item">Coding</span>
+                        <span class="works-kv-tag-item">Responsive</span>
+                    </div>
+                </div><!-- /.works-content -->
+                <div class="works-kv-img">
+                    <img src='./img/device.webp' width='1000' height='569' alt='' decoding='async' />
+                </div>
+            </section><!-- /.works-kv -->
+        </main>
+        <footer class="footer">
+            <p class="footer-text">まずはお気軽にご相談ください</p><!-- /.footer-text -->
+            <small class="footer-copyright">©2025 hiro All rights reserved.</small><!-- /.footer-copyright -->
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Portfolio</title>
+        <meta name="description" content="ページの説明" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+
+        <!-- favicon/webclipicon -->
+        <link rel="icon" href="img/favicon.ico" />
+        <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="img/webclip.png" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <!-- css -->
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- js -->
+         <script src="./js/vendor/gsap.min.js" defer></script>
+         <script src="./js/vendor/ScrollTrigger.min.js" defer></script>
+        <script type="module" src="./js/main.js"></script>
+
+        <!-- noindex -->
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <div class="l-header js-header">
+            <div class="l-header-logo">
+                <a href="index.html" class="l-header-logo-link">
+                    <span class="l-header-logo-link-en l-header-logo-white">hiro</span>
+                    <span class="l-header-logo-link-en l-header-logo-black">hiro</span>
+                    <span class="l-header-logo-link-ja l-header-logo-white">Frontend Developer</span>
+                    <span class="l-header-logo-link-ja l-header-logo-black">Frontend Developer</span>
+                </a>
+            </div><!-- /.l-header-logo -->
+            <dialog class="l-header-menu js-header-menu" aria-label="メニュー">
+                <button class="l-header-menu-close js-header-menu-close" aria-label="メニューを閉じる">
+                    <img src='./img/icon-cross.svg' width='50' height='50' alt='メニューを閉じる' decoding='async' />
+                </button>
+                <nav class="l-header-menu-nav">
+                    <ul class="l-header-menu-nav-list">
+                        <li class="l-header-menu-nav-item">
+                            <a href="#work" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">Work</span>
+                                <span class="l-header-menu-nav-link-ja">お仕事</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="#about" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">ABOUT</span>
+                                <span class="l-header-menu-nav-link-ja">私について</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="#skill" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">skill</span>
+                                <span class="l-header-menu-nav-link-ja">技術</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="#flow" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">flow</span>
+                                <span class="l-header-menu-nav-link-ja">制作の流れ</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="#contact" class="l-header-menu-nav-link u-text-hover l-header-menu-nav-link--contact">
+                                <span class="l-header-menu-nav-link-en">CONTACT</span>
+                                <span class="l-header-menu-nav-link-ja">お問い合わせ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </dialog><!-- / -->
+            <button class="l-header-menu-open js-header-menu-open" aria-label="メニューを開く">
+                <img src='./img/icon-dots.svg' width='50' height='50' alt='メニューを開く' decoding='async' />
+            </button>
+        </div><!-- /.l-header -->
+        <main>
+            <div class="manivisual   js-header-trigger">
+                <p class="manivisual-text">create a website</p>
+            </div><!-- /.manivisual -->
+
+            <section class="top-work l-container u-ptb" id="work">
+                <div class="top-work-title">
+                    <h2 class="c-title">WORK</h2><!-- /.c-title -->
+                </div><!-- /.top-work-title -->
+                <div class="top-work-list">
+                    <article class="top-work-item">
+                        <a href="./works.html">
+                            <div class="top-work-item-img">
+                                <img src='./img/work1.webp' width='800' height='493' alt='東和精密テック株式会社' decoding='async' />
+                            </div><!-- /.top-work-item-img -->
+                            <div class="top-work-item-content">
+                                <h3 class="top-work-item-title">東和精密テック株式会社</h3><!-- /.top-work-item-title -->
+                                <p class="top-work-item-category">コーポレートサイト</p><!-- /.top-work-item-category -->
+                                <p class="top-work-item-description-link">
+                                    <span class="top-work-item-description-link-item">Design</span>
+                                    <span class="top-work-item-description-link-item">coding</span>
+                                </p><!-- /.top-work-item-description -->
+                                <div class="top-work-item-tags">
+                                    <span class="top-work-item-tag tag-html">HTML</span><!-- /.top-work-item-tag -->
+                                    <span class="top-work-item-tag tag-css">CSS</span><!-- /.top-work-item-tag -->
+                                    <span class="top-work-item-tag tag-js">JavaScript</span><!-- /.top-work-item-tag -->
+                                </div><!-- /.top-work-item-tags -->
+                                <div class="top-work-item-button">
+                                    <span class="c-button">View more</span>
+                                </div><!-- /.top-work-item-button -->
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="top-work-item">
+                        <a href="#">
+                            <div class="top-work-item-img">
+                                <img src='./img/work2.webp' width='600' height='408' alt='コーヒーハウス' decoding='async' />
+                            </div><!-- /.top-work-item-img -->
+                            <div class="top-work-item-content">
+                                <h3 class="top-work-item-title">コーヒーハウス</h3><!-- /.top-work-item-title -->
+                                <p class="top-work-item-category">LPサイト</p><!-- /.top-work-item-category -->
+                                <p class="top-work-item-description-link">
+                                    <span class="top-work-item-description-link-item">Design</span>
+                                    <span class="top-work-item-description-link-item">coding</span>
+                                </p><!-- /.top-work-item-description -->
+                                <div class="top-work-item-tags">
+                                    <span class="top-work-item-tag tag-html">HTML</span><!-- /.top-work-item-tag -->
+                                    <span class="top-work-item-tag tag-css">CSS</span><!-- /.top-work-item-tag -->
+                                </div><!-- /.top-work-item-tags -->
+                                <div class="top-work-item-button">
+                                    <span class="c-button">View more</span>
+                                </div><!-- /.top-work-item-button -->
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="top-work-item">
+                        <a href="#">
+                            <div class="top-work-item-img">
+                                <img src='./img/work3.webp' width='600' height='439' alt='インテリアショップ' decoding='async' />
+                            </div><!-- /.top-work-item-img -->
+                            <div class="top-work-item-content">
+                                <h3 class="top-work-item-title">インテリアショップ</h3><!-- /.top-work-item-title -->
+                                <p class="top-work-item-category">LPサイト</p><!-- /.top-work-item-category -->
+                                <p class="top-work-item-description-link">
+                                    <span class="top-work-item-description-link-item">Design</span>
+                                    <span class="top-work-item-description-link-item">coding</span>
+                                </p><!-- /.top-work-item-description -->
+                                <div class="top-work-item-tags">
+                                    <span class="top-work-item-tag tag-html">HTML</span><!-- /.top-work-item-tag -->
+                                    <span class="top-work-item-tag tag-css">CSS</span><!-- /.top-work-item-tag -->
+                                    <span class="top-work-item-tag tag-js">JavaScript</span><!-- /.top-work-item-tag -->
+                                </div><!-- /.top-work-item-tags -->
+                                <div class="top-work-item-button">
+                                    <span class="c-button">View more</span>
+                                </div><!-- /.top-work-item-button -->
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="top-about u-ptb" id="about">
+                <div class="l-container">
+                    <div class="top-about-title">
+                        <h2 class="c-title">ABOUT</h2><!-- /.c-title -->
+                    </div><!-- /.top-about-title -->
+                    <div class="top-about-list">
+                        <article class="top-about-item">
+                            <div class="top-about-item-img">
+                                <img src='./img/about1.svg' width='24' height='24' alt='見やすいデザイン' decoding='async' />
+                            </div>
+                            <p class="top-about-item-text">見やすいデザイン</p><!-- /.top-about-item-text -->
+                        </article>
+    
+                        <article class="top-about-item">
+                            <div class="top-about-item-img">
+                                <img src='./img/about2.svg' width='24' height='24' alt='見やすいデザイン' decoding='async' />
+                            </div>
+                            <p class="top-about-item-text">スマホ対応</p><!-- /.top-about-item-text -->
+                        </article>
+    
+                        <article class="top-about-item">
+                            <div class="top-about-item-img">
+                                <img src='./img/about3.svg' width='24' height='24' alt='見やすいデザイン' decoding='async' />
+                            </div>
+                            <p class="top-about-item-text">丁寧なコーディング</p><!-- /.top-about-item-text -->
+                        </article>
+                    </div><!-- /.top-about-list -->
+                </div>
+            </section>
+
+            <section class="top-skill l-container u-ptb" id="skill">
+                <div class="top-skill-title">
+                    <h2 class="c-title">SKILL</h2><!-- /.c-title -->
+                </div><!-- /.top-about-title -->
+                <ul class="top-skill-list">
+                    <li class="top-skill-item">
+                        <p class="top-skill-item-text">HTML</p><!-- /.top-skill-item-text -->
+                    </li>
+                    <li class="top-skill-item">
+                        <p class="top-skill-item-text">CSS</p><!-- /.top-skill-item-text -->
+                    </li>
+                    <li class="top-skill-item">
+                        <p class="top-skill-item-text">JavaScript</p><!-- /.top-skill-item-text -->
+                    </li>
+                </ul>
+            </section><!-- /.top-skill -->
+
+            <section class="top-flow u-ptb" id="flow">
+                <div class="l-container">
+                    <div class="top-flow-title">
+                        <h2 class="c-title">FLOW</h2><!-- /.c-title -->
+                    </div><!-- /.top-flow-title -->
+                    <ol class="top-flow-list">
+                        <li class="top-flow-item">
+                            <span class="top-flow-item-number">01</span>
+                            <span class="top-flow-item-text">ヒアリング</span>
+                        </li>
+                        <li class="top-flow-item">
+                            <span class="top-flow-item-number">02</span>
+                            <span class="top-flow-item-text">デザイン</span>
+                        </li>
+                        <li class="top-flow-item">
+                            <span class="top-flow-item-number">03</span>
+                            <span class="top-flow-item-text">コーディング</span>
+                        </li>
+                        <li class="top-flow-item">
+                            <span class="top-flow-item-number">04</span>
+                            <span class="top-flow-item-text">納品</span>
+                        </li>
+                    </ol><!-- /.top-flow-list -->
+                </div>
+            </section><!-- / -->
+
+            <section class="top-contact u-ptb l-container" id="contact">
+                    <div class="top-contact-title">
+                        <h2 class="c-title">CONTACT</h2><!-- /.c-title -->
+                    </div><!-- /.top-contact-title -->
+                    <form class="top-contact-form">
+                        <div class="top-contact-form-item">
+                            <label for="name" class="top-contact-form-item-label">
+                                <span class="top-contact-form-item-label-text">お名前</span>
+                                <span class="c-form-required">必須</span>
+                            </label>
+                            <input type="text" name="name" id="name" class="c-form-text" placeholder="お名前を入力してください" />
+                        </div>
+                        <div class="top-contact-form-item">
+                            <label for="email" class="top-contact-form-item-label">
+                                <span class="top-contact-form-item-label-text">メールアドレス</span>
+                                <span class="c-form-required">必須</span>
+                            </label>
+                            <input type="email" name="email" id="email" class="c-form-text" placeholder="メールアドレスを入力してください" />
+                        </div>
+                        <div class="top-contact-form-item">
+                            <label for="message" class="top-contact-form-item-label">
+                                <span class="top-contact-form-item-label-text">お問合せ内容</span>
+                                <span class="c-form-required">必須</span>
+                            </label>
+                            <textarea name="message" id="message" class="c-form-text c-form-textarea" placeholder="メッセージを入力してください"></textarea>
+                        </div>
+                        <div class="top-contact-form-button">
+                            <button type="submit" class="c-button-large">送信する</button>
+                        </div>
+                    </form><!-- /.top-contact-form -->
+            </section><!-- /.top-contact -->
+        </main>
+        <footer class="footer">
+            <p class="footer-text">まずはお気軽にご相談ください</p><!-- /.footer-text -->
+            <small class="footer-copyright">©2025 hiro All rights reserved.</small><!-- /.footer-copyright -->
+        </footer>
+    </body>
+</html>
