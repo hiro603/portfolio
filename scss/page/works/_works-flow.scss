@@ -4,3 +4,81 @@
 page > about > about-company
 ------------------------------
 */
+.works-flow {
+    margin-block: 40rem;
+    @include g.mq() {
+        background-color: var(--color-gray-light);
+    }
+
+}
+
+.l-container {
+
+}
+
+.works-flow-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    @include g.mq() {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+    }
+}
+
+.works-flow-item {
+    display: grid;
+    grid-template-columns: 24rem 1fr;
+    gap: 20rem;
+    padding: 20rem;
+    background-color: var(--color-gray-light);
+
+    @include g.mq() {
+        grid-template-columns: 1fr;
+    }
+}
+
+.works-flow-item--url {
+    display: flex;
+    align-items: flex-end;
+    gap: 10rem;
+    &::after {
+        content: "";
+        display: inline-block;
+        background-image: url(../img/external-link.svg);
+        background-size: cover;
+        background-position: center;
+        width: 24rem;
+        aspect-ratio: 1 / 1;
+    }
+}
+
+.works-flow-item-img {
+    width: 24rem;
+
+    @include g.mq() {
+        display: none;
+    }
+}
+
+.works-flow-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.works-flow-item-title {
+    line-height: 1;
+    font-weight: bold;
+}
+
+.works-flow-item-text {
+
+}
+
+.works-flow-item-link {
+
+}
+
