@@ -5,59 +5,87 @@ page > works > works-kv
 ------------------------------
 */
 .works-kv {
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+}
+
+.works-kv-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 100rem;
+
+    @include g.mq() {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .works-kv-content {
-    background-color: blue;
+    
 }
 
-.works-kv-meta {
+.works-kv-breadcrumbs {
+    
+}
+
+.works-kv-breadcrumbs-list {
     display: flex;
     align-items: center;
-    color: red;
+    gap: 10rem;
 }
 
-.works-kv-meta-list {
+.works-kv-breadcrumbs-item {
+    font-size: 14rem;
 
+    &:not(:last-child) {
+        &::after {
+            content: "/";
+            margin-left: 10rem;
+        }
+    }
 }
 
-.works-kv-meta-item {
-
-}
-
-.works-kv-meta-item-text {
+.works-kv-breadcrumbs-item-text {
 
 }
 
 .works-kv-title-link {
-
+    margin-top: 40rem;
 }
 
 .works-kv-title-en {
-    color: red;
+    font-size: 20rem;
+    font-weight: bold;
+    font-family: var(--font-family-en);
 }
 
 .works-kv-title-ja {
-
+    font-size: 40rem;
+    font-weight: bold;
+    margin-top: 16rem;
+    line-height: 1;
 }
 
 .works-kv-text {
-
+    margin-top: 20rem;
 }
 
 .works-kv-tag {
-
+    margin-top: 16rem;
+    display: flex;
+    gap: 10rem;
+    align-items: center;
 }
 
 .works-kv-tag-item {
-
+    font-size: 12rem;
+    border-radius: 6rem;
+    padding: 2rem 6rem;
+    background-color: var(--color-gray-light);
+    font-family: var(--font-family-en);
+    letter-spacing: 0.1em;
+    font-weight: bold;
 }
 
 .works-kv-img {
-
+    margin-top: 50rem;
 }
 

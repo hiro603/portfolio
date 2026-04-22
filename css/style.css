@@ -1048,44 +1048,86 @@ page > top > top-contact
 page > works > works-kv
 ------------------------------
 */
+.works-kv-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 100rem;
+}
+@media screen and (min-width: 768px) {
+  .works-kv-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.works-kv-breadcrumbs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10rem;
+}
+
+.works-kv-breadcrumbs-item {
+  font-size: 14rem;
+}
+.works-kv-breadcrumbs-item:not(:last-child)::after {
+  content: "/";
+  margin-left: 10rem;
+}
+
+.works-kv-title-link {
+  margin-top: 40rem;
+}
+
+.works-kv-title-en {
+  font-size: 20rem;
+  font-weight: bold;
+  font-family: var(--font-family-en);
+}
+
+.works-kv-title-ja {
+  font-size: 40rem;
+  font-weight: bold;
+  margin-top: 16rem;
+  line-height: 1;
+}
+
+.works-kv-text {
+  margin-top: 20rem;
+}
+
+.works-kv-tag {
+  margin-top: 16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works-kv-tag-item {
+  font-size: 12rem;
+  border-radius: 6rem;
+  padding: 2rem 6rem;
+  background-color: var(--color-gray-light);
+  font-family: var(--font-family-en);
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.works-kv-img {
+  margin-top: 50rem;
+}
 
 /*!
-page > works > works-skill
+page > about > about-staff
 ------------------------------
 */
 /*!
-page > works > works-flow
-------------------------------
-*/
-/*!
-page > service > service-detail
-------------------------------
-*/
-/*!
-page > service > service-case
-------------------------------
-*/
-/*!
-page > news > news-archive
-------------------------------
-*/
-/*!
-page > recruit > recruit-position
-------------------------------
-*/
-/*!
-page > recruit > recruit-benefit
-------------------------------
-*/
-/*!
-page > recruit > recruit-culture
-------------------------------
-*/
-/*!
-page > recruit > recruit-entry
-------------------------------
-*/
-/*!
-page > contact > contact-form
+page > about > about-company
 ------------------------------
 */
