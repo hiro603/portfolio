@@ -1127,6 +1127,150 @@ page > works > works-kv
 page > about > about-staff
 ------------------------------
 */
+@media screen and (min-width: 768px) {
+  .work-skill-item-content {
+    margin-left: 52rem;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 50rem;
+  }
+}
+
+.work-skill-item-title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10rem;
+}
+@media screen and (min-width: 768px) {
+  .work-skill-item-title-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.work-skill-item-title-number {
+  font-size: 40rem;
+  font-family: var(--font-family-en);
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.work-skill-item-title-text {
+  font-weight: bold;
+  font-size: 18rem;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+
+.work-skill-item-content-text {
+  line-height: 2;
+  margin-top: 16rem;
+}
+.work-skill-item-content-text span {
+  display: block;
+}
+
+.works-skill-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60rem;
+  margin-top: 40rem;
+  position: relative;
+}
+.works-skill-list::after {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/chevron-down.svg);
+  background-size: cover;
+  background-position: center;
+  width: 40rem;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  .works-skill-list::after {
+    background-image: url(../img/chevron-right.svg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .works-skill-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.works-skill-before,
+.works-skill-after {
+  padding: 16rem;
+  border-radius: 6rem;
+}
+
+.works-skill-before-title,
+.works-skill-after-title {
+  font-weight: bold;
+}
+
+.works-skill-before-list,
+.works-skill-after-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10rem;
+  margin-top: 20rem;
+}
+
+.works-skill-before {
+  background-color: var(--color-gray-light);
+}
+
+.works-skill-after {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+}
+
+.works-skill-before-item,
+.works-skill-after-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+  font-size: 14rem;
+}
+.works-skill-before-item::before,
+.works-skill-after-item::before {
+  content: "";
+  display: block;
+  width: 5rem;
+  aspect-ratio: 1/1;
+  background-color: var(--color-font-base);
+  border-radius: 50%;
+}
+
+.works-skill-after-item::before {
+  background-color: var(--color-white);
+}
+
 /*!
 page > about > about-company
 ------------------------------
@@ -1169,10 +1313,12 @@ page > about > about-company
   gap: 20rem;
   padding: 20rem;
   background-color: var(--color-gray-light);
+  border-radius: 6rem;
 }
 @media screen and (min-width: 768px) {
   .works-flow-item {
     grid-template-columns: 1fr;
+    border-radius: 0;
   }
 }
 
