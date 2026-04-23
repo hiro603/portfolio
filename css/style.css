@@ -1131,3 +1131,91 @@ page > about > about-staff
 page > about > about-company
 ------------------------------
 */
+.works-flow {
+  margin-block: 40rem;
+}
+@media screen and (min-width: 768px) {
+  .works-flow {
+    background-color: var(--color-gray-light);
+  }
+}
+
+.works-flow-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .works-flow-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.works-flow-item {
+  display: grid;
+  grid-template-columns: 24rem 1fr;
+  gap: 20rem;
+  padding: 20rem;
+  background-color: var(--color-gray-light);
+}
+@media screen and (min-width: 768px) {
+  .works-flow-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+.works-flow-item--url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 10rem;
+}
+.works-flow-item--url::after {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/external-link.svg);
+  background-size: cover;
+  background-position: center;
+  width: 24rem;
+  aspect-ratio: 1/1;
+}
+
+.works-flow-item-img {
+  width: 24rem;
+}
+@media screen and (min-width: 768px) {
+  .works-flow-item-img {
+    display: none;
+  }
+}
+
+.works-flow-item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10rem;
+}
+
+.works-flow-item-title {
+  line-height: 1;
+  font-weight: bold;
+}
