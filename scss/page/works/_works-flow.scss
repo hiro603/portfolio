@@ -34,9 +34,11 @@ page > about > about-company
     gap: 20rem;
     padding: 20rem;
     background-color: var(--color-gray-light);
+    border-radius: 6rem;
 
     @include g.mq() {
         grid-template-columns: 1fr;
+        border-radius: 0;
     }
 }
 
