@@ -1187,6 +1187,12 @@ page > about > about-staff
 .work-skill-item-content-text {
   line-height: 2;
   margin-top: 16rem;
+  font-size: 14rem;
+}
+@media screen and (min-width: 768px) {
+  .work-skill-item-content-text {
+    width: 350rem;
+  }
 }
 .work-skill-item-content-text span {
   display: block;
@@ -1284,7 +1290,7 @@ page > about > about-staff
   .work-skill-point {
     display: grid;
     grid-template-columns: 40% 1fr;
-    gap: 50rem;
+    gap: 80rem;
   }
 }
 
@@ -1292,15 +1298,27 @@ page > about > about-staff
   margin-top: 16rem;
   font-size: 14rem;
 }
+@media screen and (min-width: 768px) {
+  .work-skill-item-text {
+    width: 350rem;
+  }
+}
+.work-skill-item-text span {
+  display: block;
+}
 
 .work-skill-item-img-list {
-  display: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20rem;
+  margin-top: 40rem;
 }
 @media screen and (min-width: 768px) {
   .work-skill-item-img-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20rem;
+    margin-top: 0;
   }
 }
 
