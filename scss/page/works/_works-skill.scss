@@ -120,13 +120,13 @@ page > about > about-staff
 
 .work-skill-list-item {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: 5rem;
     font-size: 14rem;
 
     &::before {
         content: "";
-        display: block;
+        display: inline-block;
         width: 5rem;
         aspect-ratio: 1 / 1;
         background-color: var(--color-font-base);
