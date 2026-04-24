@@ -1331,6 +1331,54 @@ page > about > about-staff
   }
 }
 
+@media screen and (min-width: 768px) {
+  .work-skill-item-content--result {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+.work-skill-btn-link {
+  padding: 16rem 20rem;
+  width: 100%;
+  background-color: var(--color-gray);
+  border-radius: 6rem;
+  color: var(--color-white);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16rem;
+  margin-top: 60rem;
+}
+.work-skill-btn-link::before {
+  content: "";
+  display: inline-block;
+  -webkit-mask-image: url("../img/arrow-left.svg");
+          mask-image: url("../img/arrow-left.svg");
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  background-color: var(--color-white);
+  width: 24rem;
+  aspect-ratio: 1/1;
+}
+
 /*!
 page > about > about-company
 ------------------------------

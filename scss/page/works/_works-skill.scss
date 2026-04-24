@@ -183,3 +183,37 @@ page > about > about-staff
         margin-left: 80rem;
     }
 }
+
+.work-skill-item-content--result {
+
+    @include g.mq() {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+.work-skill-btn-link {
+    padding: 16rem 20rem;
+    width: 100%;
+    background-color: var(--color-gray);
+    border-radius: 6rem;
+    color: var(--color-white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16rem;
+    margin-top: 60rem;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        mask-image: url('../img/arrow-left.svg');
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        background-color: var(--color-white);
+        width: 24rem;
+        aspect-ratio: 1 / 1;
+    }
+}
