@@ -48,6 +48,11 @@ page > about > about-staff
 .work-skill-item-content-text {
     line-height: 2;
     margin-top: 16rem;
+    font-size: 14rem;
+
+    @include g.mq() {
+        width: 350rem;
+    }
     
     span {
         display: block;
@@ -139,22 +144,35 @@ page > about > about-staff
     @include g.mq() {
         display: grid;
         grid-template-columns: 40% 1fr;
-        gap: 50rem;
+        gap: 80rem;
     }
 }
 
 .work-skill-item-text {
     margin-top: 16rem;
     font-size: 14rem;
+
+    @include g.mq() {
+    width: 350rem;
+        
+    }
+
+    span {
+        display: block;
+    }
 }
 
 .work-skill-item-img-list {
-    display: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20rem;
+    margin-top: 40rem;
 
     @include g.mq() {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20rem;
+        margin-top: 0;
     }
 }
 
