@@ -5,16 +5,14 @@ page > about > about-staff
 ------------------------------
 */
 .work-skill {
-    
-}
-
-.work-skill-item {
-
+    display: flex;
+    flex-direction: column;
+    gap: 60rem;
 }
 
 .work-skill-item-content {
     @include g.mq() {
-        margin-left: 52rem;
+        margin-left: 80rem;
         display: grid;
         grid-template-columns: 40% 1fr;
         gap: 50rem;
@@ -24,7 +22,7 @@ page > about > about-staff
 .work-skill-item-title-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 30rem;
 
     @include g.mq() {
         flex-direction: row;
@@ -115,8 +113,7 @@ page > about > about-staff
     color: var(--color-white);
 }
 
-.works-skill-before-item,
-.works-skill-after-item {
+.work-skill-list-item {
     display: flex;
     align-items: center;
     gap: 5rem;
@@ -138,9 +135,33 @@ page > about > about-staff
     }
 }
 
-.works-skill-after-title {
+.work-skill-point {
+    @include g.mq() {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        gap: 50rem;
+    }
 }
 
-.works-skill-after-list {
+.work-skill-item-text {
+    margin-top: 16rem;
+    font-size: 14rem;
+}
 
+.work-skill-item-img-list {
+    display: none;
+
+    @include g.mq() {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20rem;
+    }
+}
+
+.work-skill-point-content {
+    margin-top: 20rem;
+
+    @include g.mq() {
+        margin-left: 80rem;
+    }
 }

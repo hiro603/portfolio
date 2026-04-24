@@ -1127,9 +1127,20 @@ page > works > works-kv
 page > about > about-staff
 ------------------------------
 */
+.work-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60rem;
+}
+
 @media screen and (min-width: 768px) {
   .work-skill-item-content {
-    margin-left: 52rem;
+    margin-left: 80rem;
     display: grid;
     grid-template-columns: 40% 1fr;
     gap: 50rem;
@@ -1144,7 +1155,7 @@ page > about > about-staff
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10rem;
+  gap: 30rem;
 }
 @media screen and (min-width: 768px) {
   .work-skill-item-title-wrapper {
@@ -1246,8 +1257,7 @@ page > about > about-staff
   color: var(--color-white);
 }
 
-.works-skill-before-item,
-.works-skill-after-item {
+.work-skill-list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1257,8 +1267,7 @@ page > about > about-staff
   gap: 5rem;
   font-size: 14rem;
 }
-.works-skill-before-item::before,
-.works-skill-after-item::before {
+.work-skill-list-item::before {
   content: "";
   display: block;
   width: 5rem;
@@ -1269,6 +1278,39 @@ page > about > about-staff
 
 .works-skill-after-item::before {
   background-color: var(--color-white);
+}
+
+@media screen and (min-width: 768px) {
+  .work-skill-point {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 50rem;
+  }
+}
+
+.work-skill-item-text {
+  margin-top: 16rem;
+  font-size: 14rem;
+}
+
+.work-skill-item-img-list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .work-skill-item-img-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20rem;
+  }
+}
+
+.work-skill-point-content {
+  margin-top: 20rem;
+}
+@media screen and (min-width: 768px) {
+  .work-skill-point-content {
+    margin-left: 80rem;
+  }
 }
 
 /*!
