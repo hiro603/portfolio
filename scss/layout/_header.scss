@@ -170,3 +170,16 @@ layout > header
 .l-header-menu-close {
 }
 
+.l-header--works {
+    .l-header-logo-white {
+        display: none;
+    }
+
+    .l-header-logo-black {
+        display: block;
+    }
+}
+
+.l-header-menu-nav--works {
+        color: var(--color-font-base);
+}
