@@ -8,27 +8,62 @@ layout > footer
     background-color: var(--color-gray);
     color: var(--color-white);
     padding: 32rem;
-    text-align: center;
     margin-top: 60rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.footer-text {
-    font-size: 20rem;
-    font-weight: bold;
-    line-height: 1;
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
 
     @include g.mq() {
-        font-size: 28rem;
+        flex-direction: row;
+        gap: 50rem;
+        align-items: center;
+    }
+}
+
+.footer-title {
+    font-family: var(--font-family-en);
+    font-weight: bold;
+    letter-spacing: 0.05em;
+
+    @include g.mq() {
+        font-size: 24rem;
     }
 }
 
 .footer-copyright {
     font-size: 12rem;
-    margin-top: 12rem;
     display: block;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
 
     @include g.mq() {
-        margin-top: 16rem;
+        gap: 50rem;
     }
 }
+
+.footer-item {
+    width: 30rem;
+    aspect-ratio: 1 / 1;
+
+    @include g.mq() {
+        width: 40rem;
+    }
+}
+
+
+
+
+
+
 

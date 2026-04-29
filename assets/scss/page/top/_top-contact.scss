@@ -59,8 +59,8 @@ page > top > top-contact
 
 .top-contact-form-button {
     margin-inline: auto;
+    margin-top: 16rem;
 
-    gap: 16rem;
     @include g.mq() {
         grid-column: 1 / 3;
     }

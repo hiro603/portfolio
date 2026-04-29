@@ -55,7 +55,6 @@ layout > header
     font-size: 32rem;
     font-weight: bold;
     letter-spacing: 0.1em;
-
     
 }
 
@@ -115,7 +114,7 @@ layout > header
     display: flex;
     flex-direction: column;
     gap: 16rem;
-    padding: 40rem;
+    padding: 0 40rem;
 
     @include g.mq() {
         flex-direction: row;
