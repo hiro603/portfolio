@@ -193,8 +193,9 @@ layout > header
 }
 
 .l-header-menu-nav-cta {
+    margin-top: 40rem;
     padding-block: 60rem;
-    background-image: url(../../../assets/img/detail/detail2/cta.webp);
+    background-image: url(../../../assets/img/menu-cta.webp);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -259,7 +260,7 @@ layout > header
 
 .l-header-menu-footer-list {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     gap: 20rem;
     margin-top: 20rem;

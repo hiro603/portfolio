@@ -692,8 +692,9 @@ layout > header
 }
 
 .l-header-menu-nav-cta {
+  margin-top: 40rem;
   padding-block: 60rem;
-  background-image: url(../../../assets/img/detail/detail2/cta.webp);
+  background-image: url(../../../assets/img/menu-cta.webp);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -770,9 +771,9 @@ layout > header
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
