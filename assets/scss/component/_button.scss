@@ -26,8 +26,8 @@ component > button
 .c-button-large {
     color: #fff;
     background-color: var(--color-gray);
-    width: 180rem;
-    height: 45rem;
+    width: 240rem;
+    height: 54rem;
     border-radius: 100vh;
     display: grid;
     place-items: center;
@@ -37,10 +37,24 @@ component > button
     border: 1rem solid var(--color-gray);
     transition: background-color 0.3s, color 0.3s;
     
+    
     @media (any-hover: hover) {
         &:hover{
             background-color: var(--color-white);
             color: var(--color-gray);
+        }
+    }
+
+    &--white {
+        background-color: var(--color-white);
+        color: var(--color-gray);
+        border: 1rem solid var(--color-white);
+
+        @media (any-hover: hover) {
+            &:hover{
+                background-color: var(--color-gray);
+                color: var(--color-white);
+            }
         }
     }
 }
