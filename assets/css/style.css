@@ -11,6 +11,7 @@ global > color
   --color-gray: #888888;
   --color-gray-light: #f5f5f5;
   --color-orange: #ff5722;
+  --color-blue: #38BDF8;
 }
 
 /*!
@@ -289,7 +290,7 @@ component > button
 ------------------------------
 */
 .c-button {
-  background-image: linear-gradient(45deg, #458cd3 0%, #ebf1fd 100%);
+  background-image: linear-gradient(45deg, var(--color-blue) 0%, var(--color-gray-light) 100%);
   color: #fff;
   width: 60rem;
   aspect-ratio: 1/1;
@@ -336,6 +337,17 @@ component > button
   .c-button-large--white:hover {
     background-color: var(--color-gray);
     color: var(--color-white);
+  }
+}
+.c-button-large--blue {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border: 1rem solid var(--color-blue);
+}
+@media (any-hover: hover) {
+  .c-button-large--blue:hover {
+    background-color: var(--color-white);
+    color: var(--color-blue);
   }
 }
 
@@ -503,7 +515,7 @@ layout > header
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20rem 12rem;
+  padding: 20rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -513,7 +525,7 @@ layout > header
 }
 @media screen and (min-width: 768px) {
   .l-header {
-    padding: 20rem 65rem;
+    padding: 0rem 65rem;
   }
 }
 .l-header.is-active .l-header-logo-white {
@@ -617,7 +629,7 @@ layout > header
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 16rem;
-  padding: 0 40rem;
+  padding: 40rem;
 }
 @media screen and (min-width: 768px) {
   .l-header-menu-nav-list {
@@ -692,7 +704,6 @@ layout > header
 }
 
 .l-header-menu-nav-cta {
-  margin-top: 40rem;
   padding-block: 60rem;
   background-image: url(../../../assets/img/menu-cta.webp);
   background-size: cover;
@@ -707,7 +718,7 @@ layout > header
 }
 
 .l-header-menu-nav-cta-text {
-  font-size: 32rem;
+  font-size: 28rem;
   font-weight: bold;
   letter-spacing: 0.1em;
   text-align: center;
@@ -794,7 +805,6 @@ layout > footer
   background-color: var(--color-gray);
   color: var(--color-white);
   padding: 32rem;
-  margin-top: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

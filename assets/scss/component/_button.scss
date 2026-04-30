@@ -5,7 +5,7 @@ component > button
 ------------------------------
 */
 .c-button {
-    background-image: linear-gradient(45deg, #458cd3 0%, #ebf1fd 100%);
+    background-image: linear-gradient(45deg, var(--color-blue) 0%, var(--color-gray-light) 100%);
     color: #fff;
     width: 60rem;
     aspect-ratio: 1 / 1;
@@ -54,6 +54,19 @@ component > button
             &:hover{
                 background-color: var(--color-gray);
                 color: var(--color-white);
+            }
+        }
+    }
+
+    &--blue {
+        background-color: var(--color-blue);
+        color: var(--color-white);
+        border: 1rem solid var(--color-blue);
+
+        @media (any-hover: hover) {
+            &:hover{
+                background-color: var(--color-white);
+                color: var(--color-blue);
             }
         }
     }

@@ -8,7 +8,7 @@ layout > header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20rem 12rem;
+    padding: 20rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -17,7 +17,7 @@ layout > header
     background-color: rgba(255, 255, 255, 0);
     
     @include g.mq() {
-        padding: 20rem 65rem;
+        padding: 0rem 65rem;
     }
 
     &.is-active {
@@ -114,7 +114,7 @@ layout > header
     display: flex;
     flex-direction: column;
     gap: 16rem;
-    padding: 0 40rem;
+    padding: 40rem;
 
     @include g.mq() {
         flex-direction: row;
@@ -193,7 +193,6 @@ layout > header
 }
 
 .l-header-menu-nav-cta {
-    margin-top: 40rem;
     padding-block: 60rem;
     background-image: url(../../../assets/img/menu-cta.webp);
     background-size: cover;
@@ -207,7 +206,7 @@ layout > header
 }
 
 .l-header-menu-nav-cta-text {
-    font-size: 32rem;
+    font-size: 28rem;
     font-weight: bold;
     letter-spacing: 0.1em;
     text-align: center;
