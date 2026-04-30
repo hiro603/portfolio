@@ -1270,6 +1270,11 @@ page > top > top-contact
   }
 }
 
+.notice {
+  font-size: 12rem;
+  text-align: center;
+  margin-top: 40rem;
+}
 /*!
 page > service > service-detail
 ------------------------------
