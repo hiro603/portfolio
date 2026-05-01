@@ -1360,7 +1360,7 @@ textarea.is-error {
 }
 
 .top-contact-form-recaptcha {
-  margin-inline: auto;
+  text-align: center;
 }
 
 /*!
