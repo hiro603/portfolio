@@ -1359,7 +1359,7 @@ textarea.is-error {
   tabindex: -1;
 }
 
-.top-contact-form-recaptcha {
+.top-contact-form-recaptcha-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
