@@ -268,30 +268,47 @@
                         <h2 class="c-title">CONTACT</h2><!-- /.c-title -->
                     </div><!-- /.top-contact-title -->
 
-                    <form class="top-contact-form" data-netlify="true">
+                    <form class="top-contact-form" id="contact-form" name="contact" method="POST" data-netlify-recaptcha="true" netlify-honeypot="bot-field" novalidate>
+                        <input type="hidden" name="form-name" value="contact">
+                        <input type="text" name="website" id="honeypot" tabindex="-1" autocomplete="off" >
+
                         <div class="top-contact-form-item">
                             <label for="name" class="top-contact-form-item-label">
                                 <span class="top-contact-form-item-label-text">お名前</span>
                                 <span class="c-form-required">必須</span>
                             </label>
-                            <input type="text" name="name" id="name" class="c-form-text" placeholder="お名前を入力してください" />
+                            <input type="text" name="name" id="name" class="c-form-text js-name-field" placeholder="お名前を入力してください" required/>
                         </div>
                         <div class="top-contact-form-item">
                             <label for="email" class="top-contact-form-item-label">
                                 <span class="top-contact-form-item-label-text">メールアドレス</span>
                                 <span class="c-form-required">必須</span>
                             </label>
-                            <input type="email" name="email" id="email" class="c-form-text" placeholder="メールアドレスを入力してください" />
+                            <input type="email" name="email" id="email" class="c-form-text js-email-field" placeholder="メールアドレスを入力してください" required/>
                         </div>
                         <div class="top-contact-form-item">
                             <label for="message" class="top-contact-form-item-label">
                                 <span class="top-contact-form-item-label-text">お問合せ内容</span>
                                 <span class="c-form-required">必須</span>
                             </label>
-                            <textarea name="message" id="message" class="c-form-text c-form-textarea" placeholder="メッセージを入力してください"></textarea>
+                            <textarea name="message" id="message" class="c-form-text c-form-textarea" placeholder="メッセージを入力してください" required></textarea>
+                            <p class="error js-error"></p>
                         </div>
+
+                        <fieldset class="top-contact-form-item--privacy">
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="checkbox-input" name="agree" id="agree" required>
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">
+                                  <a href="/privacy" target="_blank">プライバシーポリシー</a>に同意する
+                                </span>
+                              </label>
+                          </fieldset>
+
+                          <div data-netlify-recaptcha="true"></div>
+
                         <div class="top-contact-form-button">
-                            <button type="submit" class="c-button-large c-button-large--blue">送信する</button>
+                            <button type="submit" class="c-button-large c-button-large--blue js-submit-button">送信する</button>
                         </div>
                     </form><!-- /.top-contact-form -->
             </section><!-- /.top-contact -->
