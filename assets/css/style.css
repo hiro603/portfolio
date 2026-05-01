@@ -1360,7 +1360,12 @@ textarea.is-error {
 }
 
 .top-contact-form-recaptcha {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*!

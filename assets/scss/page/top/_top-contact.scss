@@ -154,5 +154,6 @@ page > top > top-contact
   }
 
   .top-contact-form-recaptcha {
-    text-align: center;
+    display: flex;
+    justify-content: center;
   }
