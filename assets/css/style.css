@@ -1366,7 +1366,11 @@ textarea.is-error {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .top-contact-form-recaptcha-wrapper {
+    grid-column: 1/3;
+  }
 }
 
 /*!
