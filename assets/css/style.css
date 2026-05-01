@@ -12,6 +12,7 @@ global > color
   --color-gray-light: #f5f5f5;
   --color-orange: #ff5722;
   --color-blue: #38BDF8;
+  --color-border: #e5e7eb;
 }
 
 /*!
@@ -528,13 +529,13 @@ layout > header
     padding: 0rem 65rem;
   }
 }
-.l-header.is-active .l-header-logo-white {
+.l-header.is-active .l-header-logo-top--white {
   display: none;
 }
-.l-header.is-active .l-header-logo-black {
+.l-header.is-active .l-header-logo-top--black {
   display: block;
 }
-.l-header.is-active .l-header-menu-nav {
+.l-header.is-active .l-header-menu-nav--top {
   color: var(--color-font-base);
 }
 @media screen and (min-width: 768px) {
@@ -543,13 +544,18 @@ layout > header
   }
 }
 
-.l-header-logo-white {
+.l-header-logo-top--white {
   display: block;
   color: var(--color-white);
 }
 
-.l-header-logo-black {
+.l-header-logo-top--black {
   display: none;
+  color: var(--color-font-base);
+}
+
+.l-header-logo-black {
+  display: block;
   color: var(--color-font-base);
 }
 
@@ -609,7 +615,6 @@ layout > header
   width: 320rem;
   margin-left: auto;
   border-radius: 0 0 0 20rem;
-  color: var(--color-white);
 }
 @media screen and (min-width: 768px) {
   .l-header-menu-nav {
@@ -618,6 +623,9 @@ layout > header
     padding: 0;
     border-radius: 0;
   }
+}
+.l-header-menu-nav--top {
+  color: var(--color-white);
 }
 
 .l-header-menu-nav-list {
@@ -1367,6 +1375,72 @@ textarea.is-error {
   .top-contact-form-recaptcha-wrapper {
     grid-column: 1/3;
   }
+}
+
+/*!
+page > privacy > privacy
+------------------------------
+*/
+.privacy {
+  margin-top: 80rem;
+}
+@media screen and (min-width: 768px) {
+  .privacy {
+    margin-top: 120rem;
+  }
+}
+
+.privacy-content {
+  border-bottom: 1rem solid var(--color-border);
+  padding: 24rem;
+}
+.privacy-content:last-child {
+  border-bottom: none;
+}
+
+.privacy-title {
+  font-size: 18rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.privacy-title--large {
+  font-size: 24rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+@media screen and (min-width: 768px) {
+  .privacy-title {
+    font-size: 20px;
+  }
+  .privacy-title--large {
+    font-size: 28px;
+  }
+}
+
+.privacy-text {
+  line-height: 1.8;
+  margin-top: 12rem;
+}
+
+.privacy-list {
+  margin-top: 12rem;
+}
+
+.privacy-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10rem;
+}
+.privacy-item::before {
+  content: "";
+  width: 4rem;
+  aspect-ratio: 1/1;
+  background-color: var(--color-font-base);
+  border-radius: 50%;
 }
 
 /*!

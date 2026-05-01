@@ -21,15 +21,15 @@ layout > header
     }
 
     &.is-active {
-        .l-header-logo-white {
+        .l-header-logo-top--white {
             display: none;
         }
 
-        .l-header-logo-black {
+        .l-header-logo-top--black {
             display: block;
         }
 
-        .l-header-menu-nav {
+        .l-header-menu-nav--top {
             color: var(--color-font-base);
         }
 
@@ -41,13 +41,19 @@ layout > header
     }
 }
 
-.l-header-logo-white {
+.l-header-logo-top--white {
     display: block;
     color: var(--color-white);
 }
 
-.l-header-logo-black {
+.l-header-logo-top--black {
     display: none;
+    color: var(--color-font-base);
+}
+
+
+.l-header-logo-black {
+    display: block;
     color: var(--color-font-base);
 }
 
@@ -100,13 +106,16 @@ layout > header
     width: 320rem;
     margin-left: auto;
     border-radius: 0 0 0 20rem;
-    color: var(--color-white);
 
     @include g.mq() {
         background-color: transparent;
         width: auto;
         padding: 0;
         border-radius: 0;
+    }
+
+    &--top {
+        color: var(--color-white);
     }
 }
 
