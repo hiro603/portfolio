@@ -1359,6 +1359,10 @@ textarea.is-error {
   tabindex: -1;
 }
 
+.top-contact-form-recaptcha {
+  margin-inline: auto;
+}
+
 /*!
 page > works > works-kv
 ------------------------------
