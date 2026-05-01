@@ -144,13 +144,9 @@ page > top > top-contact
     outline-color: #e53e3e;
   }
 
-  #honeypot {
+  .hidden {
     position: absolute;
-    left: -9999rem;
-    opacity: 0;
-    height: 0;
-    width: 0;
-    tabindex: -1;
+    left: -9999px;
   }
 
   .top-contact-form-recaptcha-wrapper {
