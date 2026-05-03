@@ -544,7 +544,7 @@ layout > header
 .l-header.is-active .l-header-logo-top--black {
   display: block;
 }
-.l-header.is-active .l-header-menu-nav--top {
+.l-header.is-active .l-header-menu-nav-list {
   color: var(--color-font-base);
 }
 @media screen and (min-width: 768px) {
@@ -660,7 +660,11 @@ layout > header
         -ms-flex-align: center;
             align-items: center;
     gap: 50rem;
+    color: var(--color-font-base);
   }
+}
+.l-header-menu-nav-list--top {
+  color: var(--color-white);
 }
 
 .l-header-menu-nav-link {
@@ -734,6 +738,9 @@ layout > header
   .l-header-menu-nav-cta {
     display: none;
   }
+}
+.l-header-menu-nav-cta--detail {
+  background-image: url(../../../assets/img/detail/detail1/service1.webp);
 }
 
 .l-header-menu-nav-cta-text {
