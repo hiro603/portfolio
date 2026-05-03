@@ -62,7 +62,12 @@ layout > footer
 
 
 
-
+.footer--detail {
+    margin-top: 60rem;
+    @include g.mq() {
+        margin-top: 80rem;
+    }
+}
 
 
 

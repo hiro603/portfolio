@@ -271,6 +271,15 @@ utility > utility
   }
 }
 
+.u-pt {
+  padding-top: 60rem;
+}
+@media screen and (min-width: 768px) {
+  .u-pt {
+    padding-top: 100rem;
+  }
+}
+
 .u-text-hover {
   background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
   background-image: linear-gradient(currentColor, currentColor);
@@ -592,7 +601,8 @@ layout > header
 .l-header-menu {
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6rem);
 }
 @media screen and (min-width: 768px) {
   .l-header-menu {
@@ -638,6 +648,7 @@ layout > header
           flex-direction: column;
   gap: 16rem;
   padding: 40rem;
+  color: var(--color-white);
 }
 @media screen and (min-width: 768px) {
   .l-header-menu-nav-list {
@@ -730,6 +741,7 @@ layout > header
   font-weight: bold;
   letter-spacing: 0.1em;
   text-align: center;
+  color: var(--color-white);
 }
 .l-header-menu-nav-cta-text span {
   display: block;
@@ -767,6 +779,7 @@ layout > header
 
 .l-header-menu-footer {
   padding: 40rem;
+  color: var(--color-white);
 }
 @media screen and (min-width: 768px) {
   .l-header-menu-footer {
@@ -888,6 +901,15 @@ layout > footer
 @media screen and (min-width: 768px) {
   .footer-item {
     width: 40rem;
+  }
+}
+
+.footer--detail {
+  margin-top: 60rem;
+}
+@media screen and (min-width: 768px) {
+  .footer--detail {
+    margin-top: 80rem;
   }
 }
 

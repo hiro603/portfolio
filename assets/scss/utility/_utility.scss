@@ -26,6 +26,14 @@ utility > utility
     }
 }
 
+.u-pt {
+    padding-top: 60rem;
+
+    @include g.mq() {
+        padding-top: 100rem;
+    }
+}
+
 .u-text-hover {
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0 100%;

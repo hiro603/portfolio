@@ -8,9 +8,9 @@
         <meta name="format-detection" content="telephone=no, email=no" />
 
         <!-- favicon/webclipicon -->
-        <link rel="icon" href="assets/img/favicon/favicon.ico" />
-        <link rel="icon" href="assets/img/favicon/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png" />
+        <link rel="icon" href="./assets/img/favicon/favicon.ico" />
+        <link rel="icon" href="./assets/img/favicon/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="./assets/img/favicon/apple-touch-icon.png" />
 
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -263,12 +263,24 @@
                 </div>
             </section><!-- / -->
 
-            <section class="top-contact u-ptb l-container" id="contact">
-                    <div class="top-contact-title">
+            
+
+
+            
+            <section class="top-contact" id="contact">
+                    <div class="top-contact-title u-ptb">
                         <h2 class="c-title">CONTACT</h2><!-- /.c-title -->
                     </div><!-- /.top-contact-title -->
+                    <!-- お問い合わせフォーム -->
+                    <script src="https://sdk.form.run/js/v2/embed.js" defer></script>
+<div
+  class="formrun-embed"
+  data-formrun-form="@n-y-h--uWs6VT0EQflpagghNm3Y"
+  data-formrun-redirect="true"
+>
+</div>
 
-                    <form class="top-contact-form" id="contact-form" name="contact" method="POST" data-netlify-recaptcha="true" netlify-honeypot="bot-field" novalidate>
+                    <!-- <form class="top-contact-form" id="contact-form" name="contact" method="POST" novalidate>
                         <input type="hidden" name="form-name" value="contact">
                         <p class="hidden">
                             <label>Do not fill this out:
@@ -309,14 +321,10 @@
                               </label>
                           </fieldset>
 
-                          <div class="top-contact-form-recaptcha-wrapper">
-                            <div data-netlify-recaptcha="true"></div>
-                        </div>
-
                         <div class="top-contact-form-button">
                             <button type="submit" class="c-button-large c-button-large--blue js-submit-button">送信する</button>
                         </div>
-                    </form><!-- /.top-contact-form -->
+                    </form>/.top-contact-form -->
             </section><!-- /.top-contact -->
         </main>
         <footer class="footer">
