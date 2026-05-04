@@ -595,6 +595,7 @@ layout > header
 .l-header-logo-link-ja {
   font-size: 1rem;
   line-height: 1;
+  font-weight: bold;
 }
 
 .l-header-menu {

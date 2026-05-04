@@ -56,8 +56,8 @@ export const initializeHamburgerMenu = () => {
     });
 
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 768) {
-            closeMenu();
+        if (window.innerWidth >= 768) {
+            menu.close();
             document.body.style.overflow = '';
         }
     });
