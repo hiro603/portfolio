@@ -13,34 +13,34 @@ page > top > top-about
 }
 
 .top-about-list {
-    margin-top: 40rem;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20rem;
+    gap: 20px;
 
     @include g.mq() {
         grid-template-columns: repeat(3, 1fr);
-        gap: 40rem;
-        margin-top: 60rem;
+        gap: 40px;
+        margin-top: 60px;
     }
 }
 
 .top-about-item {
-    box-shadow: 10rem 10rem 20rem 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 40rem;
+    padding: 40px;
 }
 
 .top-about-item-img {
     display: block;
     margin-inline: auto;
-    width: 60rem;
+    width: 60px;
     aspect-ratio: 1 / 1;
 }
 
 .top-about-item-text {
-    font-size: 16rem;
+    font-size: 1rem;
     font-weight: 500;
-    margin-top: 20rem;
+    margin-top: 20px;
 }
 

@@ -4,23 +4,19 @@
 foundation > base
 ------------------------------
 */
-:root {
-    --base-vw: 375;
-
-    @include g.mq() {
-        --base-vw: 1366;
-    }
-}
 
 html {
-    font-size: calc(100vw / var(--base-vw));
+    font-size: 16px;
 }
 
 body {
-    font-size: 16rem;
+    font-size: 1rem;
     line-height: 1.7;
     font-family: var(--font-family-base);
     color: var(--color-font-base);
-    line-height: 1.6;
     letter-spacing: 0.05em;
+
+    @include g.mq() {
+        font-size: 1.125rem;
+    }
 }

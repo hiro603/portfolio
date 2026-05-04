@@ -5,16 +5,16 @@ page > privacy > privacy
 ------------------------------
 */
 .privacy {
-    margin-top: 80rem;
+    margin-top: 80px;
 
     @include g.mq() {
-        margin-top: 120rem;
+        margin-top: 120px;
     }
 }
 
 .privacy-content {
-    border-bottom: 1rem solid var(--color-border);
-    padding: 24rem;
+    border-bottom: 1px solid var(--color-border);
+    padding: 24px;
 
     &:last-child {
         border-bottom: none;
@@ -22,42 +22,42 @@ page > privacy > privacy
 }
 
 .privacy-title {
-    font-size: 18rem;
+    font-size: 1.125rem;
     font-weight: bold;
     letter-spacing: 0.1em;
 
     &--large {
-        font-size: 24rem;
+        font-size: 1.5rem;
         font-weight: bold;
         letter-spacing: 0.1em;
     }
 
     @include g.mq() {
-        font-size: 20px;
+        font-size: clamp(16px, 2.4vw, 20px);
 
         &--large {
-            font-size: 28px;
+            font-size: clamp(20px, 3.125vw, 28px);
         }
     }
 }
 
 .privacy-text {
     line-height: 1.8;
-    margin-top: 12rem;
+    margin-top: 12px;
 }
 
 .privacy-list {
-    margin-top: 12rem;
+    margin-top: 12px;
 }
 
 .privacy-item {
     display: flex;
     align-items: center;
-    gap: 10rem;
+    gap: 10px;
 
     &::before {
         content: "";
-        width: 4rem;
+        width: 4px;
         aspect-ratio: 1 / 1;
         background-color: var(--color-font-base);
         border-radius: 50%;

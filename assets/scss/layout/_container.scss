@@ -5,10 +5,10 @@ layout > container
 ------------------------------
 */
 .l-container {
-    padding-inline: 20rem;
+    padding-inline: 20px;
 
     @include g.mq() {
-        max-width: 1200rem;
+        max-width: 1200px;
         margin-inline: auto;
     }
 }

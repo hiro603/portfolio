@@ -5,17 +5,17 @@ component > title
 ------------------------------
 */
 .c-title {
-    font-size: 24rem;
+    font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 0.1em;
     display: flex;
     align-items: center;
-    gap: 32rem;
+    gap: 32px;
     color: var(--color-gray);
     font-family: var(--font-family-en);
 
     @include g.mq() {
-        font-size: 32rem;
+        font-size: 2rem;
     }
 
     &::before {

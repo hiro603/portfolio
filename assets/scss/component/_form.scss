@@ -7,15 +7,15 @@ component > form
 .c-form-required {
     background-color: red;
     color: var(--color-white);
-    font-size: 12rem;
-    padding: 2rem 6rem;
-    border-radius: 5rem;
-    margin-left: 10rem;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 5px;
+    margin-left: 10px;
 }
 .c-form-text {
     width: 100%;
-    padding: 12rem 8rem;
-    border-radius: 8rem;
+    padding: 12px 8px;
+    border-radius: 8px;
     background-color: var(--color-gray-light);
 
     &::placeholder {
@@ -23,10 +23,10 @@ component > form
     }
 
     &:focus {
-        outline: 1rem solid var(--color-gray);
+        outline: 1px solid var(--color-gray);
     }
 }
 .c-form-textarea {
-    min-height: 200rem;
+    min-height: 200px;
     field-sizing: content;
 }

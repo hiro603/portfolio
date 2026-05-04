@@ -5,7 +5,7 @@ page > about > about-company
 ------------------------------
 */
 .works-flow {
-    margin-block: 40rem;
+    margin-block: 40px;
     @include g.mq() {
         background-color: var(--color-gray-light);
     }
@@ -19,7 +19,7 @@ page > about > about-company
 .works-flow-list {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 4px;
 
     @include g.mq() {
         flex-direction: row;
@@ -30,11 +30,11 @@ page > about > about-company
 
 .works-flow-item {
     display: grid;
-    grid-template-columns: 24rem 1fr;
-    gap: 20rem;
-    padding: 20rem;
+    grid-template-columns: 24px 1fr;
+    gap: 20px;
+    padding: 20px;
     background-color: var(--color-gray-light);
-    border-radius: 6rem;
+    border-radius: 6px;
 
     @include g.mq() {
         grid-template-columns: 1fr;
@@ -45,20 +45,20 @@ page > about > about-company
 .works-flow-item--url {
     display: flex;
     align-items: flex-end;
-    gap: 10rem;
+    gap: 10px;
     &::after {
         content: "";
         display: inline-block;
         background-image: url(../img/external-link.svg);
         background-size: cover;
         background-position: center;
-        width: 24rem;
+        width: 24px;
         aspect-ratio: 1 / 1;
     }
 }
 
 .works-flow-item-img {
-    width: 24rem;
+    width: 24px;
 
     @include g.mq() {
         display: none;
@@ -68,7 +68,7 @@ page > about > about-company
 .works-flow-item-content {
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 10px;
 }
 
 .works-flow-item-title {

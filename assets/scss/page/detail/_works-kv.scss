@@ -11,7 +11,7 @@ page > works > works-kv
 .works-kv-inner {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 100rem;
+    margin-top: 140px;
 
     @include g.mq() {
         grid-template-columns: repeat(2, 1fr);
@@ -29,56 +29,56 @@ page > works > works-kv
 .works-kv-breadcrumbs-list {
     display: flex;
     align-items: center;
-    gap: 10rem;
+    gap: 10px;
 }
 
 .works-kv-breadcrumbs-item {
-    font-size: 14rem;
+    font-size: 0.875rem;
+    
 
     &:not(:last-child) {
         &::after {
             content: "/";
-            margin-left: 10rem;
+            margin-left: 10px;
         }
     }
 }
 
 .works-kv-breadcrumbs-item-text {
-
 }
 
 .works-kv-title-link {
-    margin-top: 40rem;
+    margin-top: 40px;
 }
 
 .works-kv-title-en {
-    font-size: 20rem;
+    font-size: clamp(16px, 2.4vw, 20px);
     font-weight: bold;
     font-family: var(--font-family-en);
 }
 
 .works-kv-title-ja {
-    font-size: 40rem;
+    font-size: clamp(20px, 3.125vw, 28px);
     font-weight: bold;
-    margin-top: 16rem;
+    margin-top: 16px;
     line-height: 1;
 }
 
 .works-kv-text {
-    margin-top: 20rem;
+    margin-top: 20px;
 }
 
 .works-kv-tag {
-    margin-top: 16rem;
+    margin-top: 16px;
     display: flex;
-    gap: 10rem;
+    gap: 10px;
     align-items: center;
 }
 
 .works-kv-tag-item {
-    font-size: 12rem;
-    border-radius: 6rem;
-    padding: 2rem 6rem;
+    font-size: 0.75rem;
+    border-radius: 6px;
+    padding: 2px 6px;
     background-color: var(--color-gray-light);
     font-family: var(--font-family-en);
     letter-spacing: 0.1em;
@@ -86,5 +86,5 @@ page > works > works-kv
 }
 
 .works-kv-img {
-    margin-top: 50rem;
+    margin-top: 50px;
 }

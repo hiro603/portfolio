@@ -7,10 +7,10 @@ component > cards
 .card-list {
     display: flex;
     flex-direction: column;
-    gap: 24rem;
+    gap: 24px;
 
     @include g.mq() {
         flex-direction: row;
-        gap: 40rem;
+        gap: 40px;
     }
 }

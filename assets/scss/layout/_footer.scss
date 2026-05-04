@@ -7,7 +7,7 @@ layout > footer
 .footer {
     background-color: var(--color-gray);
     color: var(--color-white);
-    padding: 32rem;
+    padding: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,11 +16,11 @@ layout > footer
 .footer-content {
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 10px;
 
     @include g.mq() {
         flex-direction: row;
-        gap: 50rem;
+        gap: 50px;
         align-items: center;
     }
 }
@@ -29,14 +29,11 @@ layout > footer
     font-family: var(--font-family-en);
     font-weight: bold;
     letter-spacing: 0.05em;
-
-    @include g.mq() {
-        font-size: 24rem;
-    }
+    font-size: clamp(16px, 2.4vw, 24px);
 }
 
 .footer-copyright {
-    font-size: 12rem;
+    font-size: 0.75rem;
     display: block;
 }
 
@@ -44,28 +41,26 @@ layout > footer
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20rem;
+    gap: 20px;
 
     @include g.mq() {
-        gap: 50rem;
+        gap: 50px;
     }
 }
 
 .footer-item {
-    width: 30rem;
+    width: 30px;
     aspect-ratio: 1 / 1;
 
     @include g.mq() {
-        width: 40rem;
+        width: 40px;
     }
 }
 
-
-
 .footer--detail {
-    margin-top: 60rem;
+    margin-top: 60px;
     @include g.mq() {
-        margin-top: 80rem;
+        margin-top: 80px;
     }
 }
 

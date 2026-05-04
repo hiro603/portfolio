@@ -19,32 +19,32 @@ utility > utility
 }
 
 .u-ptb {
-    padding-block: 60rem;
+    padding-block: clamp(20px, 3.75vw, 60px);
 
     @include g.mq() {
-        padding-block: 100rem;
+        padding-block: clamp(40px, 6.25vw, 100px);
     }
 }
 
 .u-pt {
-    padding-top: 60rem;
+        padding-top: clamp(20px, 3.75vw, 60px);
 
     @include g.mq() {
-        padding-top: 100rem;
+        padding-top: clamp(40px, 6.25vw, 100px);
     }
 }
 
 .u-text-hover {
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0 100%;
-    background-size: 0 1rem;
+    background-size: 0 1px;
     background-repeat: no-repeat;
     transition: background-size 0.3s;
 
     @include g.mq() {
         @media (any-hover: hover) {
             &:hover {
-                background-size: 100% 1rem;
+                background-size: 100% 1px;
             }
         }
     }

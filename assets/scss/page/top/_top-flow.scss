@@ -13,52 +13,52 @@ page > top > top-flow
 }
 
 .top-flow-list {
-    margin-top: 40rem;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20rem;
+    gap: 20px;
 
 
     @include g.mq() {
-        margin-top: 60rem;
+        margin-top: 60px;
         flex-direction: row;
-        gap: 40rem;
+        gap: 40px;
     }
 }
 
 .top-flow-item {
     text-align: center;
     background-color: var(--color-white);
-    width: 210rem;
-    height: 40rem;
+    width: 210px;
+    height: 40px;
     position: relative;
     display: inline-block;
-    padding-block: 36rem;
+    padding-block: 36px;
 
     @include g.mq() {
         &:not(:last-child)::before {
             content: "";
-            height: 20rem;
+            height: 20px;
             aspect-ratio: cos(50deg);
             clip-path: polygon(0 0,100% 50%,0 100%);
             background: var(--color-gray-light);
             position: absolute;
             top: 47%;
-            right: -13rem;
+            right: -13px;
             z-index: 2;
         }
     
         &:not(:last-child)::after {
             content: "";
-            height: 30rem;
+            height: 30px;
             aspect-ratio: cos(50deg);
             clip-path: polygon(0 0,100% 50%,0 100%);
             background: var(--color-white);
             position: absolute;
             top: 40%;
-            right: -18rem;
+            right: -18px;
             z-index: 1;
         }
     }
@@ -66,12 +66,12 @@ page > top > top-flow
 }
 
 .top-flow-item-number {
-    font-size: 40rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: var(--color-primary);
     display: block;
     position: absolute;
-    top: -34rem;
+    top: -34px;
     left: 50%;
     transform: translateX(-50%);
     font-family: var(--font-family-en);
@@ -80,7 +80,7 @@ page > top > top-flow
 .top-flow-item-text {
     display: block;
     font-weight: 500;
-    font-size: 20rem;
+    font-size: 1.25rem;
     line-height: 1;
 }
 
