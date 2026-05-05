@@ -1,0 +1,14 @@
+@use "../../global" as g;
+
+/*!
+page > detail > detail-design
+------------------------------
+*/
+
+.detail-design-text {
+    margin-top: 20px;
+
+    span {
+        display: block;
+    }
+}

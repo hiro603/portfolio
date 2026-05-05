@@ -4,11 +4,7 @@
 page > works > works-overview
 ------------------------------
 */
-.works-overview {
-    
-}
-
-.works-overview-title {
+.detail-overview-title {
     font-size: clamp(24px, 3vw, 32px);
     font-weight: bold;
     letter-spacing: 0.1em;
@@ -16,7 +12,7 @@ page > works > works-overview
     font-family: var(--font-family-en);
 }
 
-.works-overview-text {
+.detail-overview-text {
     font-size: 1rem;
     line-height: 1.8;
     margin-top: 20px;

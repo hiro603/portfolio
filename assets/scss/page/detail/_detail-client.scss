@@ -1,14 +1,14 @@
 @use "../../global" as g;
 
 /*!
-page > works > works-client
+page > detail > detail-client
 ------------------------------
 */
-.works-client {
+.detail-client {
     background-color: var(--color-gray-light);
 }
 
-.works-client-title {
+.detail-client-title {
     font-size: clamp(24px, 3vw, 32px);
     font-weight: bold;
     letter-spacing: 0.1em;
@@ -16,7 +16,7 @@ page > works > works-client
     font-family: var(--font-family-en);
 }
 
-.works-client-cards {
+.detail-client-cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -27,7 +27,7 @@ page > works > works-client
     }
 }
 
-.works-client-card {
+.detail-client-card {
     background: var(--color-white);
     padding: 20px;
     border: 1px solid var(--color-border);
@@ -35,14 +35,14 @@ page > works > works-client
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-.works-client-card-title {
+.detail-client-card-title {
     font-size: clamp(16px, 2.2vw, 24px);
     font-weight: bold;
     letter-spacing: 0.1em;
     color: var(--color-gray);
 }
 
-.works-client-card-text {
+.detail-client-card-text {
     font-size: 1rem;
     line-height: 1.8;
     margin-top: 10px;

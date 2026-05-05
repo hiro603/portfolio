@@ -34,3 +34,30 @@ component > title
         background-color: var(--color-gray);
     }
 }
+
+.c-title-detail-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include g.mq() {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.c-title-detail-en {
+    font-size: 0.875rem;
+    color: var(--color-gray);
+    font-family: var(--font-family-en);
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.c-title-detail-ja {
+    font-weight: bold;
+    font-size: clamp(24px, 3vw, 32px);
+    letter-spacing: 0.1em;
+    line-height: 1;
+}

@@ -1,15 +1,14 @@
 @use "../../global" as g;
 
 /*!
-page > works > works-problem
+page > detail > detail-problem
 ------------------------------
 */
-.works-problem {
+.detail-problem {
     background-color: var(--color-gray-light);
-    margin-top: 60px;
 }
 
-.works-problem-title {
+.detail-problem-title {
     font-size: clamp(24px, 3vw, 32px);
     font-weight: bold;
     letter-spacing: 0.1em;
@@ -17,11 +16,11 @@ page > works > works-problem
     font-family: var(--font-family-en);
 }
 
-.works-problem-list {
+.detail-problem-list {
     margin-top: 20px;
 }
 
-.works-problem-item {
+.detail-problem-item {
     font-weight: bold;
     border-left: 3px solid #ccc;
     padding-left: 12px;

@@ -1,14 +1,10 @@
 @use "../../global" as g;
 
 /*!
-page > works > works-kv
+page > detail > detail-kv
 ------------------------------
 */
-.works-kv {
-    
-}
-
-.works-kv-inner {
+.detail-kv-inner {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 140px;
@@ -18,21 +14,13 @@ page > works > works-kv
     }
 }
 
-.works-kv-content {
-    
-}
-
-.works-kv-breadcrumbs {
-    
-}
-
-.works-kv-breadcrumbs-list {
+.detail-kv-breadcrumbs-list {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.works-kv-breadcrumbs-item {
+.detail-kv-breadcrumbs-item {
     font-size: 0.875rem;
     
 
@@ -44,38 +32,38 @@ page > works > works-kv
     }
 }
 
-.works-kv-breadcrumbs-item-text {
+.detail-kv-breadcrumbs-item-text {
 }
 
-.works-kv-title-link {
+.detail-kv-title-link {
     margin-top: 40px;
 }
 
-.works-kv-title-en {
+.detail-kv-title-en {
     font-size: clamp(16px, 2.4vw, 20px);
     font-weight: bold;
     font-family: var(--font-family-en);
 }
 
-.works-kv-title-ja {
+.detail-kv-title-ja {
     font-size: clamp(20px, 3.125vw, 28px);
     font-weight: bold;
     margin-top: 16px;
     line-height: 1;
 }
 
-.works-kv-text {
+.detail-kv-text {
     margin-top: 20px;
 }
 
-.works-kv-tag {
+.detail-kv-tag {
     margin-top: 16px;
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.works-kv-tag-item {
+.detail-kv-tag-item {
     font-size: 0.75rem;
     border-radius: 6px;
     padding: 2px 6px;
@@ -85,6 +73,6 @@ page > works > works-kv
     font-weight: bold;
 }
 
-.works-kv-img {
+.detail-kv-img {
     margin-top: 50px;
 }

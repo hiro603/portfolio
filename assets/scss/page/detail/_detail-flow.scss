@@ -4,19 +4,13 @@
 page > about > about-company
 ------------------------------
 */
-.works-flow {
-    margin-block: 40px;
+.detail-flow {
     @include g.mq() {
-        background-color: var(--color-gray-light);
+        background-color: var(--color-gray);
     }
-
 }
 
-.l-container {
-
-}
-
-.works-flow-list {
+.detail-flow-list {
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -28,12 +22,13 @@ page > about > about-company
     }
 }
 
-.works-flow-item {
+.detail-flow-item {
     display: grid;
     grid-template-columns: 24px 1fr;
     gap: 20px;
     padding: 20px;
-    background-color: var(--color-gray-light);
+    background-color: var(--color-gray);
+    color: var(--color-white);
     border-radius: 6px;
 
     @include g.mq() {
@@ -42,22 +37,24 @@ page > about > about-company
     }
 }
 
-.works-flow-item--url {
+.detail-flow-item--url {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     gap: 10px;
     &::after {
         content: "";
         display: inline-block;
-        background-image: url(../../../../assets/img/detail//external-link.svg);
-        background-size: cover;
-        background-position: center;
+        background-color: var(--color-white);
+        mask-image: url(../../../../assets/img/detail/external-link.svg);
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: center;
         width: 24px;
         aspect-ratio: 1 / 1;
     }
 }
 
-.works-flow-item-img {
+.detail-flow-item-img {
     width: 24px;
 
     @include g.mq() {
@@ -65,22 +62,13 @@ page > about > about-company
     }
 }
 
-.works-flow-item-content {
+.detail-flow-item-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.works-flow-item-title {
+.detail-flow-item-title {
     line-height: 1;
     font-weight: bold;
 }
-
-.works-flow-item-text {
-
-}
-
-.works-flow-item-link {
-
-}
-
