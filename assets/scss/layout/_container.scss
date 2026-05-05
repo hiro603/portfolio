@@ -12,3 +12,12 @@ layout > container
         margin-inline: auto;
     }
 }
+
+.l-container-s {
+    padding-inline: 20px;
+
+    @include g.mq() {
+        max-width: 800px;
+        margin-inline: auto;
+    }
+}

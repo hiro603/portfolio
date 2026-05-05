@@ -1,0 +1,31 @@
+@use "../../global" as g;
+
+/*!
+page > works > works-problem
+------------------------------
+*/
+.works-problem {
+    background-color: var(--color-gray-light);
+    margin-top: 60px;
+}
+
+.works-problem-title {
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: var(--color-gray);
+    font-family: var(--font-family-en);
+}
+
+.works-problem-list {
+    margin-top: 20px;
+}
+
+.works-problem-item {
+    font-weight: bold;
+    border-left: 3px solid #ccc;
+    padding-left: 12px;
+    line-height: 1.8;
+    margin-top: 16px;
+}
+

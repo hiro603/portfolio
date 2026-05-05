@@ -19,19 +19,15 @@ utility > utility
 }
 
 .u-ptb {
-    padding-block: clamp(20px, 3.75vw, 60px);
-
-    @include g.mq() {
-        padding-block: clamp(40px, 6.25vw, 100px);
-    }
+    padding-block: clamp(40px, 6.25vw, 80px);
 }
 
 .u-pt {
-        padding-top: clamp(20px, 3.75vw, 60px);
+        padding-top: clamp(40px, 6.25vw, 80px);
+}
 
-    @include g.mq() {
-        padding-top: clamp(40px, 6.25vw, 100px);
-    }
+.u-pb {
+    padding-bottom: clamp(40px, 6.25vw, 80px);
 }
 
 .u-text-hover {

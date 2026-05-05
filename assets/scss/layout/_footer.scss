@@ -11,6 +11,13 @@ layout > footer
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &--detail {
+        margin-top: 60px;
+        @include g.mq() {
+            margin-top: 80px;
+        }
+    }
 }
 
 .footer-content {
@@ -57,12 +64,6 @@ layout > footer
     }
 }
 
-.footer--detail {
-    margin-top: 60px;
-    @include g.mq() {
-        margin-top: 80px;
-    }
-}
 
 
 
