@@ -1,40 +1,5 @@
 @charset "UTF-8";
 /*!
-global > color
-------------------------------
-*/
-:root {
-  --color-bg-base: #ffffff;
-  --color-font-base: #333333;
-  --color-white: #ffffff;
-  --color-black: #000000;
-  --color-gray: #888888;
-  --color-gray-light: #f5f5f5;
-  --color-orange: #ff5722;
-  --color-blue: #38BDF8;
-  --color-border: #e5e7eb;
-}
-
-/*!
-global > font
-------------------------------
-*/
-:root {
-  --font-family-base: "Noto Sans JP", sans-serif;
-  --font-family-en: "Dosis", sans-serif;
-}
-
-/*!
-global > z-index
-------------------------------
-*/
-:root {
-  --z-index-negative: -1;
-  --z-index-base: 1;
-  --z-index-header: 30;
-}
-
-/*!
 foundation > reset
 ------------------------------
 */
@@ -237,6 +202,33 @@ body {
   body {
     font-size: 1.125rem;
   }
+}
+
+/*!
+foundation > variables
+------------------------------
+*/
+:root {
+  --font-family-base: "Noto Sans JP", sans-serif;
+  --font-family-en: "Dosis", sans-serif;
+  --content-width-sm: 800px;
+  --content-width-md: 1200px;
+  --content-width-lg: 1366px;
+  --gutter-sm: 16px;
+  --gutter-md: 24px;
+  --gutter-lg: 32px;
+  --color-bg-base: #ffffff;
+  --color-font-base: #333333;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: #888888;
+  --color-gray-light: #f5f5f5;
+  --color-orange: #ff5722;
+  --color-blue: #38BDF8;
+  --color-border: #e5e7eb;
+  --z-index-negative: -1;
+  --z-index-base: 1;
+  --z-index-header: 30;
 }
 
 /*!
@@ -446,18 +438,6 @@ component > title
 }
 
 /*!
-component > page-kv
-------------------------------
-*/
-/*!
-component > news-item
-------------------------------
-*/
-/*!
-component > pagination
-------------------------------
-*/
-/*!
 component > cards
 ------------------------------
 */
@@ -525,37 +505,20 @@ component > form
 }
 
 /*!
-component > notice
-------------------------------
-*/
-.c-notice {
-  font-size: 0.75rem;
-  color: var(--color-gray);
-  text-align: center;
-}
-
-/*!
 layout > container
 ------------------------------
 */
-.l-container {
-  padding-inline: 20px;
+.l-container-s, .l-container {
+  width: calc(100% - var(--gutter-sm) * 2);
+  margin-inline: auto;
 }
-@media screen and (min-width: 768px) {
-  .l-container {
-    max-width: 1200px;
-    margin-inline: auto;
-  }
+
+.l-container {
+  max-width: var(--content-width-md);
 }
 
 .l-container-s {
-  padding-inline: 20px;
-}
-@media screen and (min-width: 768px) {
-  .l-container-s {
-    max-width: 800px;
-    margin-inline: auto;
-  }
+  max-width: var(--content-width-sm);
 }
 
 /*!
@@ -1676,10 +1639,6 @@ page > about > about-company
   font-weight: bold;
 }
 
-/*!
-page > about > about-staff
-------------------------------
-*/
 /*!
 page > works > works-overview
 ------------------------------

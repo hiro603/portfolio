@@ -1,4 +1,4 @@
-@use "../global" as g;
+@use "../foundation" as f;
 
 /*!
 component > title
@@ -14,7 +14,7 @@ component > title
     color: var(--color-gray);
     font-family: var(--font-family-en);
 
-    @include g.mq() {
+    @include f.mq() {
         font-size: 2rem;
     }
 
@@ -40,7 +40,7 @@ component > title
     flex-direction: column;
     gap: 10px;
 
-    @include g.mq() {
+    @include f.mq() {
         flex-direction: row;
         align-items: center;
     }

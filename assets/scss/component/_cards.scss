@@ -1,16 +1,16 @@
-@use "../global" as g;
+@use "../foundation" as f;
 
 /*!
 component > cards
 ------------------------------
 */
 .card-list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 
-    @include g.mq() {
-        flex-direction: row;
-        gap: 40px;
-    }
+  @include f.mq() {
+    flex-direction: row;
+    gap: 40px;
+  }
 }

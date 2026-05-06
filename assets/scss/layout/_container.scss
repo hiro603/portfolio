@@ -1,23 +1,19 @@
-@use "../global" as g;
+@use "../foundation" as f;
 
 /*!
 layout > container
 ------------------------------
 */
+%container {
+    width: calc(100% - calc(var(--gutter-sm) * 2));
+    margin-inline: auto;
+}
 .l-container {
-    padding-inline: 20px;
-
-    @include g.mq() {
-        max-width: 1200px;
-        margin-inline: auto;
-    }
+    @extend %container;
+    max-width: var(--content-width-md);
 }
 
 .l-container-s {
-    padding-inline: 20px;
-
-    @include g.mq() {
-        max-width: 800px;
-        margin-inline: auto;
-    }
+    @extend %container;
+    max-width: var(--content-width-sm);
 }
