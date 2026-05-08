@@ -509,12 +509,10 @@ layout > container
 ------------------------------
 */
 .l-container-s, .l-container {
-  width: calc(100% - var(--gutter-sm) * 2);
-  margin-inline: auto;
-}
-
-.l-container {
+  width: 100%;
   max-width: var(--content-width-md);
+  padding-inline: var(--gutter-sm);
+  margin-inline: auto;
 }
 
 .l-container-s {
