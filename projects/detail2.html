@@ -8,9 +8,9 @@
         <meta name="format-detection" content="telephone=no, email=no" />
 
         <!-- favicon/webclipicon -->
-        <link rel="icon" href="assets/img/favicon.ico" />
-        <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="assets/img/webclip.png" />
+        <link rel="icon" href="../assets/img/favicon/favicon.ico" />
+        <link rel="icon" href="../assets/img/favicon/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="../assets/img/favicon/apple-touch-icon.png" />
 
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,32 +20,30 @@
         <link rel="stylesheet" href="../assets/css/style.css" />
 
         <!-- js -->
-         <script src="assets/js/vendor/gsap.min.js" defer></script>
-         <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
-        <script type="module" src="assets/js/main.js"></script>
+         <script src="../assets/js/vendor/gsap.min.js" defer></script>
+         <script src="../assets/js/vendor/ScrollTrigger.min.js" defer></script>
+        <script type="module" src="../assets/js/main.js"></script>
 
         <!-- noindex -->
         <meta name="robots" content="noindex" />
     </head>
     <body>
-        <div class="l-header js-header l-header--works">
+        <div class="l-header js-header l-header--detail js-header-trigger">
             <div class="l-header-logo">
                 <a href="../index.html" class="l-header-logo-link">
-                    <span class="l-header-logo-link-en l-header-logo-white">hiro</span>
                     <span class="l-header-logo-link-en l-header-logo-black">hiro</span>
-                    <span class="l-header-logo-link-ja l-header-logo-white">Frontend Developer</span>
                     <span class="l-header-logo-link-ja l-header-logo-black">Frontend Developer</span>
                 </a>
             </div><!-- /.l-header-logo -->
             <dialog class="l-header-menu js-header-menu" aria-label="メニュー">
                 <button class="l-header-menu-close js-header-menu-close" aria-label="メニューを閉じる">
-                    <img src='assets/img/icon-cross.svg' width='50' height='50' alt='メニューを閉じる' decoding='async' />
+                    <img src='../assets/img/icon-cross.svg' width='50' height='50' alt='メニューを閉じる' decoding='async' />
                 </button>
-                <nav class="l-header-menu-nav l-header-menu-nav--works">
+                <nav class="l-header-menu-nav">
                     <ul class="l-header-menu-nav-list">
                         <li class="l-header-menu-nav-item">
-                            <a href="../index.html#work" class="l-header-menu-nav-link u-text-hover">
-                                <span class="l-header-menu-nav-link-en">Work</span>
+                            <a href="../index.html#detail" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">top</span>
                                 <span class="l-header-menu-nav-link-ja">お仕事</span>
                             </a>
                         </li>
@@ -74,48 +72,309 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="l-header-menu-nav-cta l-header-menu-nav-cta--detail">
+                        <p class="l-header-menu-nav-cta-text">
+                            <span>Web制作の</span>
+                            <span>ご相談はこちら</span>
+                        </p>
+                        <div class="l-header-menu-nav-cta-button">
+                            <a href="index.html#contact" class="l-header-menu-nav-cta-button-link c-button-large c-button-large--white">お問い合わせ</a>
+                        </div>
+                    </div><!-- /.l-header-menu-nav-cta -->
+
+                    <div class="l-header-menu-footer">
+                        <h2 class="l-header-menu-footer-title">hiro Portfolio</h2>
+                        <small class="l-header-menu-footer-copyright">© 2026 hiro</small>
+                        <ul class="l-header-menu-footer-list">
+                            <li class="l-header-menu-footer-item">
+                                <a href="https://github.com/hiro-portfolio" target="_blank" rel="noopener noreferrer">
+                                    <img src='../assets/img/icon_github.svg' width='24' height='24' alt='GitHub' decoding='async' />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/hiro_portfolio" target="_blank" rel="noopener noreferrer">
+                                    <img src='../assets/img/icon_twitter.svg' width='24' height='24' alt='Twitter' decoding='async' />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </dialog><!-- / -->
             <button class="l-header-menu-open js-header-menu-open" aria-label="メニューを開く">
-                <img src='assets/img/icon-dots.svg' width='50' height='50' alt='メニューを開く' decoding='async' />
+                <img src='../assets/img/icon-dots.svg' width='50' height='50' alt='メニューを開く' decoding='async' />
             </button>
         </div><!-- /.l-header -->
         <main>
-            <section class="works-kv l-container">
-                <div class="works-kv-inner">
-                    <div class="works-kv-content">
-                        <div class="works-kv-breadcrumbs">
-                            <ul class="works-kv-breadcrumbs-list">
-                                <li class="works-kv-breadcrumbs-item">
+            <section class="detail-kv l-container">
+                <div class="detail-kv-inner">
+                    <div class="detail-kv-content">
+                        <div class="detail-kv-breadcrumbs">
+                            <ul class="detail-kv-breadcrumbs-list">
+                                <li class="detail-kv-breadcrumbs-item">
                                     <a href="../index.html">HOME</a>
                                 </li>
-                                <li class="works-kv-breadcrumbs-item">
-                                    <a href="../index.html#work">WORK</a>
+                                <li class="detail-kv-breadcrumbs-item">
+                                    <a href="../index.html#detail">detail</a>
                                 </li>
-                                <li class="works-kv-breadcrumbs-item">
-                                    <span class="works-kv-breadcrumbs-item-text">コーポレートサイト制作</span>
+                                <li class="detail-kv-breadcrumbs-item">
+                                    <span class="detail-kv-breadcrumbs-item-text">カフェサイト制作</span>
                                 </li>
                             </ul>
                         </div><!-- / -->
     
-                        <div class="works-kv-title-link">
-                            <span class="works-kv-title-en">WORKS DETAIL</span>
-                            <h2 class="works-kv-title-ja">コーポレートサイト制作</h2>
-                        </div><!-- /.works-kv-title-link -->
+                        <div class="detail-kv-title-link">
+                            <span class="detail-kv-title-en">detail DETAIL</span>
+                            <h2 class="detail-kv-title-ja">カフェサイト制作</h2>
+                        </div><!-- /.detail-kv-title-link -->
     
-                        <p class="works-kv-text">金属加工会社のコーポレートサイト制作しました。</p><!-- / -->
+                        <p class="detail-kv-text">落ち着いた雰囲気のカフェサイト制作しました。</p><!-- / -->
     
-                        <div class="works-kv-tag">
-                            <span class="works-kv-tag-item">Design</span>
-                            <span class="works-kv-tag-item">Coding</span>
-                            <span class="works-kv-tag-item">Responsive</span>
+                        <div class="detail-kv-tag">
+                            <span class="detail-kv-tag-item">Design</span>
+                            <span class="detail-kv-tag-item">Coding</span>
+                            <span class="detail-kv-tag-item">Responsive</span>
                         </div>
-                    </div><!-- /.works-content -->
-                    <div class="works-kv-img">
-                        <img src='../assets/img/detail/detail2/moc-cafe.webp' width='1000' height='569' alt='' decoding='async' />
+                    </div><!-- /.detail-content -->
+                    <div class="detail-kv-img">
+                        <img src='../assets/img/detail/detail2/device.webp' width='1000' height='569' alt='' decoding='async' />
                     </div>
                 </div class="">
-            </section><!-- /.works-kv -->
+            </section><!-- /.detail-kv -->
+
+
+            <section class="detail-overview u-ptb l-container-s">
+                <h2 class="c-title-detail-wrap">
+                    <span class="c-title-detail-ja">プロジェクト概要</span>
+                    <span class="c-title-detail-en">Project Overview</span>
+                </h2>
+                <p class="detail-overview-text">
+                  本プロジェクトはポートフォリオ用に制作した仮想案件です。<br>
+                  「Café Mocha」は、やさしい光と落ち着いた空間をコンセプトにした架空のカフェサイトです。<br>
+                  温かみのあるブラウンカラーと余白を活かし、居心地の良さや店舗の雰囲気が伝わるデザインを目指しました。<br>
+                  スマートフォンでは横スクロールUIを採用し、写真を大きく見せることで、カフェの世界観を直感的に感じられる構成にしています。<br>
+                  また、シンプルな情報設計と視認性を意識し、ユーザーがストレスなく閲覧できるレスポンシブサイトとして制作しました。
+                </p>
+              </section>
+
+              <section class="detail-client u-ptb">
+                <div class="l-container-s">
+                <h2 class="c-title-detail-wrap">
+                    <span class="c-title-detail-ja">クライアント</span>
+                    <span class="c-title-detail-en">Client</span>
+                </h2>
+                <div class="detail-client-cards">
+                  <div class="detail-client-card">
+                    <h3 class="detail-client-card-title">業種</h3>
+                    <p class="detail-client-card-text">自家焙煎コーヒーと手作りスイーツを提供するカフェ</p>
+                  </div>
+                  <div class="detail-client-card">
+                    <h3 class="detail-client-card-title">対象</h3>
+                    <p class="detail-client-card-text">落ち着いた空間で過ごしたい20〜40代の女性・カップル</p>
+                  </div>
+                  <div class="detail-client-card">
+                    <h3 class="detail-client-card-title">強み</h3>
+                    <p class="detail-client-card-text">温かみのある店内空間と、こだわりのコーヒー・季節のメニュー</p>
+                  </div>
+                  <div class="detail-client-card">
+                    <h3 class="detail-client-card-title">現状</h3>
+                    <p class="detail-client-card-text">SNSでの発信が中心で、店舗の雰囲気やメニュー情報をまとめて伝える場が少ない</p>
+                  </div>
+                </div>
+            </div>
+              </section>
+
+            <section class="detail-flow">
+                <div class="l-container">
+                    <ul class="detail-flow-list">
+                        <li class="detail-flow-item">
+                            <div class="detail-flow-item-img">
+                                <img src='../assets/img/detail/calendar.svg' width='24' height='24' alt='' decoding='async' />
+                            </div><!-- / -->
+                            <div class="detail-flow-item-content">
+                                <h3 class="detail-flow-item-title">制作期間</h3><!-- /.detail-flow-item-title -->
+                                <p class="detail-flow-item-text">2026年5月3日〜2026年5月9日(6日)</p><!-- /.detail-flow-item-text -->
+                            </div>
+                        </li>
+                        <li class="detail-flow-item">
+                            <div class="detail-flow-item-img">
+                                <img src='../assets/img/detail/code.svg' width='24' height='24' alt='' decoding='async' />
+                            </div><!-- / -->
+                            <div class="detail-flow-item-content">
+                                <h3 class="detail-flow-item-title">使用技術</h3><!-- /.detail-flow-item-title -->
+                                <p class="detail-flow-item-text">HTML / CSS / javascript</p><!-- /.detail-flow-item-text -->
+                            </div>
+                        </li>
+                        <li class="detail-flow-item">
+                            <div class="detail-flow-item-img">
+                                <img src='../assets/img/detail/user.svg' width='24' height='24' alt='' decoding='async' />
+                            </div><!-- / -->
+                            <div class="detail-flow-item-content">
+                                <h3 class="detail-flow-item-title">担当範囲</h3><!-- /.detail-flow-item-title -->
+                                <p class="detail-flow-item-text">デザイン / コーディング</p><!-- /.detail-flow-item-text -->
+                            </div>
+                        </li>
+                        <li class="detail-flow-item">
+                            <div class="detail-flow-item-img">
+                                <img src='../assets/img/detail/link.svg' width='24' height='24' alt='' decoding='async' />
+                            </div><!-- / -->
+                            <div class="detail-flow-item-content">
+                                <h3 class="detail-flow-item-title">サイトURL</h3><!-- /.detail-flow-item-title -->
+                                <p class="detail-flow-item-text">
+                                    <a href='./site-b/index.html' target='_blank' rel='noopener noreferrer' class="detail-flow-item-link u-text-hover detail-flow-item--url">サイトを見る</a>
+                                </p><!-- /.detail-flow-item-text -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+                <section class="detail-objective l-container u-ptb">
+                        <h2 class="c-title-detail-wrap">
+                            <span class="c-title-detail-ja">目的</span>
+                            <span class="c-title-detail-en">Objective</span>
+                        </h2><!-- /.detail-skill-item-title-wrapper -->
+
+                    <div class="detail-objective-content">
+                        <p class="detail-objective-content-text">
+                            <span>SNSでの発信が中心で、店舗の雰囲気やメニュー情報がまとまって伝わりにくい状態でした。</span>
+                            <span>カフェの世界観を伝えながら、来店前に必要な情報へスムーズに辿り着けるサイト制作を行いました。</span>
+                        </p><!-- /.detail-skill-item-content-text -->
+
+                    <div class="detail-objective-list">
+                        <div class="detail-objective-before">
+                            <h3 class="detail-objective-before-title">Before</h3><!-- /.detail-objective-before-title -->
+    
+                            <ul class="detail-objective-before-list">
+                                <li class="detail-objective-before-item">店舗情報やメニューがSNS上に分散していた</li>
+                                <li class="detail-objective-before-item">店内の雰囲気やこだわりが伝わりにくい</li>
+                                <li class="detail-objective-before-item">来店前に営業時間やアクセスを確認しづらい</li>
+                            </ul>
+                        </div><!-- /.detail-objective-before -->
+                        <div class="detail-objective-after">
+                            <h3 class="detail-objective-after-title">After</h3><!-- /.detail-objective-after-title -->
+    
+                            <ul class="detail-objective-after-list">
+                                <li class="detail-objective-after-item">メニュー・アクセス・営業時間を分かりやすく整理</li>
+                                <li class="detail-objective-after-item">写真を大きく見せ、カフェの雰囲気を視覚的に訴求</li>
+                                <li class="detail-objective-after-item">スマホでも見やすく、来店につながる導線を設計</li>
+                            </ul>
+                        </div><!-- /.detail-objective-after -->
+                    </div>
+                </div><!-- /.detail-objective-item-content -->
+                </section>
+            
+
+                <article class="detail-target l-container u-pb">
+                    <h2 class="c-title-detail-wrap">
+                        <span class="c-title-detail-ja">ターゲット</span>
+                        <span class="c-title-detail-en">Target</span>
+                    </h2><!-- /.detail-skill-item-title-wrapper -->
+
+                    <p class="detail-target-text">落ち着いた空間でゆっくり過ごしたい20〜40代の女性・カップル</p><!-- /.detail-skill-item-content-text -->
+                </article>
+
+                <section class="detail-problem u-ptb">
+                    <div class="l-container-s">
+                        <h2 class="c-title-detail-wrap">
+                            <span class="c-title-detail-ja">課題</span>
+                            <span class="c-title-detail-en">Problem</span>
+                        </h2>
+                        <ul class="detail-problem-list">
+                          <li class="detail-problem-item">SNSだけでは店舗の雰囲気や世界観が伝わりにくい</li>
+                          <li class="detail-problem-item">メニュー・営業時間・アクセスなど、来店前に知りたい情報が探しづらい</li>
+                          <li class="detail-problem-item">写真や情報が分散しており、来店したくなる魅力をまとめて訴求できていない</li>
+                        </ul>
+                    </div>
+                  </section>
+
+                  <section class="detail-solution u-ptb">
+                    <div class="l-container-s">
+                        <h2 class="c-title-detail-wrap">
+                            <span class="c-title-detail-ja">解決策</span>
+                            <span class="c-title-detail-en">Solution</span>
+                        </h2>
+                        <ul class="detail-solution-list">
+                          <li class="detail-solution-item">ファーストビューで店内写真を大きく見せ、カフェの雰囲気がすぐに伝わる構成に設計</li>
+                          <li class="detail-solution-item">メニュー・営業時間・アクセスを整理し、来店前に必要な情報を確認しやすく配置</li>
+                          <li class="detail-solution-item">Instagramやお問い合わせへの導線を設け、SNS閲覧から来店・相談につながる流れを強化</li>
+                        </ul>
+                    </div>
+                  </section>
+
+                <section class="detail-point l-container u-ptb">
+                    <h2 class="c-title-detail-wrap">
+                        <span class="c-title-detail-ja">ポイント</span>
+                        <span class="c-title-detail-en">Point</span>
+                    </h2><!-- /.detail-skill-item-title-wrapper -->
+
+                    <div class="detail-point-wrap">
+                            <ul class="detail-point-list">
+                                <li class="detail-point-list-item">写真を大きく配置し、カフェの雰囲気が伝わるデザイン</li>
+                                <li class="detail-point-list-item">ブラウン系の配色で、温かみと落ち着きを演出</li>
+                                <li class="detail-point-list-item">メニューや店舗情報を見つけやすいシンプルな構成</li>
+                                <li class="detail-point-list-item">スマホでは横スクロールUIを取り入れ、写真を楽しみながら閲覧できる設計</li>
+                            </ul>
+                            <div class="detail-point-list-img">
+                                <img src='../assets/img/detail/detail2/fv.webp' width='1000' height='1029' alt='カフェサイトのファーストビュー' decoding='async' />
+                                <img src='../assets/img/detail/detail2/menu.webp' width='1000' height='1029' alt='カフェサイトのメニューセクション' decoding='async' />
+                                <img src='../assets/img/detail/detail2/menu4.webp' width='1000' height='1029' alt='カフェサイトのメニュー一覧' decoding='async' />
+                            </div><!-- / -->
+                        </div>
+            </section>
+
+            <section class="detail-design l-container u-ptb">
+                <h2 class="c-title-detail-wrap">
+                    <span class="c-title-detail-ja">デザイン</span>
+                    <span class="c-title-detail-en">Design</span>
+                </h2><!-- /.detail-skill-item-title-wrapper -->
+
+                <p class="detail-design-text">
+                    <span>カフェの温かみや落ち着いた雰囲気を伝えるために、ブラウン系のカラーを基調にデザインしました。</span>
+                    <span>店内写真やメニュー写真を大きく配置し、来店前にお店の空気感をイメージしやすい構成にしています。</span>
+                </p><!-- /.detail-skill-item-content-text -->
+            </section>
+
+            <section class="detail-development l-container u-ptb">
+                <h2 class="c-title-detail-wrap">
+                    <span class="c-title-detail-ja">実装</span>
+                    <span class="c-title-detail-en">Development</span>
+                </h2>
+
+                    <ul class="detail-development-list">
+                        <li class="detail-development-item">スマホでの閲覧を想定し、モバイルファーストでコーディング</li>
+                        <li class="detail-development-item">写真やセクションが自然に表示されるよう、Intersection Observerでスクロールアニメーションを実装</li>
+                        <li class="detail-development-item">メニュー・店舗情報・CTAなどを再利用しやすいクラス設計で管理</li>
+                        <li class="detail-development-item">写真が多いサイトでも快適に閲覧できるよう、画像サイズと表示速度を意識して実装</li>
+                    </ul>
+            </section>
+
+            <section class="detail-result u-ptb">
+                <div class="l-container">
+                    <h2 class="c-title-detail-wrap">
+                        <span class="c-title-detail-ja">成果</span>
+                        <span class="c-title-detail-en">Result</span>
+                    </h2>
+    
+                        <p class="lead">
+                            仮想案件のため実測値はありませんが、カフェサイトの目的に対して以下の改善を想定して制作しました。
+                          </p>
+                        
+                          <ul class="detail-result-list">
+                            <li class="detail-result-item"><strong>情報整理</strong>により、メニュー・営業時間・アクセスを来店前に確認しやすい構成に改善</li>
+                            <li class="detail-result-item"><strong>雰囲気の訴求</strong>を意識し、写真や配色でカフェの世界観が伝わる設計に改善</li>
+                            <li class="detail-result-item"><strong>来店導線</strong>を設け、Instagramや店舗情報から来店につながりやすい流れを設計</li>
+                          </ul>
+                    
+                    <div class="detail-result-btn">
+                        <a href="../index.html#detail" class="detail-result-btn-link">detail一覧に戻る</a>
+                    </div><!-- /.detail-result-btn -->
+                </div>
+            </section>
+            
         </main>
+        <footer class="footer footer--detail">
+            <p class="footer-text">まずはお気軽にご相談ください</p><!-- /.footer-text -->
+            <small class="footer-copyright">©2026 hiro All rights reserved.</small><!-- /.footer-copyright -->
+        </footer>
     </body>
 </html>

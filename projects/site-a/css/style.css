@@ -647,8 +647,8 @@ layout > header
     display: block;
     width: 18rem;
     height: 16rem;
-    -webkit-mask-image: url("/img/mail.svg");
-            mask-image: url("/img/mail.svg");
+    -webkit-mask-image: url("../img/mail.svg");
+            mask-image: url("../img/mail.svg");
     -webkit-mask-size: contain;
             mask-size: contain;
     -webkit-mask-repeat: no-repeat;
