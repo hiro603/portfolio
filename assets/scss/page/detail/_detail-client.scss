@@ -1,4 +1,4 @@
-@use "../../foundation" as f;
+@use "../../foundation/tokens" as t;
 
 /*!
 page > detail > detail-client
@@ -22,7 +22,7 @@ page > detail > detail-client
   gap: 20px;
   margin-top: 20px;
 
-  @include f.mq() {
+  @include t.mq() {
     grid-template-columns: repeat(4, 1fr);
   }
 }

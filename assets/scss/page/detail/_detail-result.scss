@@ -1,5 +1,4 @@
-@use "../../foundation" as f;
-
+@use "../../foundation/tokens" as t;
 
 /*!
 page > detail > detail-result
@@ -8,7 +7,7 @@ page > detail > detail-result
 .detail-result {
   background: #f7f7f7;
 
-  @include f.mq() {
+  @include t.mq() {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -76,7 +75,7 @@ page > detail > detail-result
 }
 
 .detail-result-btn {
-  @include f.mq() {
+  @include t.mq() {
     display: none;
   }
 }

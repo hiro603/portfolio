@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Portfolio</title>
+        <meta name="description" content="ページの説明" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+
+        <!-- favicon/webclipicon -->
+        <link rel="icon" href="../assets/img/favicon/favicon.ico" />
+        <link rel="icon" href="../assets/img/favicon/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="../assets/img/favicon/apple-touch-icon.png" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <!-- css -->
+        <link rel="stylesheet" href="../assets/css/style.css" />
+
+        <!-- js -->
+         <script src="../assets/js/vendor/gsap.min.js" defer></script>
+         <script src="../assets/js/vendor/ScrollTrigger.min.js" defer></script>
+        <script type="module" src="../assets/js/main.js"></script>
+
+        <!-- noindex -->
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <div class="l-header js-header l-header--detail js-header-trigger">
+            <div class="l-header-logo">
+                <a href="../index.html" class="l-header-logo-link">
+                    <span class="l-header-logo-link-en l-header-logo-black">hiro</span>
+                    <span class="l-header-logo-link-ja l-header-logo-black">Frontend Developer</span>
+                </a>
+            </div><!-- /.l-header-logo -->
+            <dialog class="l-header-menu js-header-menu" aria-label="メニュー">
+                <button class="l-header-menu-close js-header-menu-close" aria-label="メニューを閉じる">
+                    <img src='../assets/img/icon-cross.svg' width='50' height='50' alt='メニューを閉じる' decoding='async' />
+                </button>
+                <nav class="l-header-menu-nav">
+                    <ul class="l-header-menu-nav-list">
+                        <li class="l-header-menu-nav-item">
+                            <a href="../index.html#detail" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">Top</span>
+                                <span class="l-header-menu-nav-link-ja">お仕事</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="../index.html#about" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">About</span>
+                                <span class="l-header-menu-nav-link-ja">私について</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="../index.html#skill" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">Skill</span>
+                                <span class="l-header-menu-nav-link-ja">技術</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="../index.html#flow" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">Flow</span>
+                                <span class="l-header-menu-nav-link-ja">制作の流れ</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="../index.html#contact" class="l-header-menu-nav-link u-text-hover l-header-menu-nav-link--contact">
+                                <span class="l-header-menu-nav-link-en">Contact</span>
+                                <span class="l-header-menu-nav-link-ja">お問い合わせ</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="l-header-menu-nav-cta l-header-menu-nav-cta--detail">
+                        <p class="l-header-menu-nav-cta-text">
+                            <span>Web制作の</span>
+                            <span>ご相談はこちら</span>
+                        </p>
+                        <div class="l-header-menu-nav-cta-button">
+                            <a href="index.html#contact" class="l-header-menu-nav-cta-button-link c-button-large c-button-large--white">お問い合わせ</a>
+                        </div>
+                    </div><!-- /.l-header-menu-nav-cta -->
+
+                    <div class="l-header-menu-footer">
+                        <h2 class="l-header-menu-footer-title">hiro Portfolio</h2>
+                        <small class="l-header-menu-footer-copyright">© 2026 hiro</small>
+                        <ul class="l-header-menu-footer-list">
+                            <li class="l-header-menu-footer-item">
+                                <a href="https://github.com/hiro-portfolio" target="_blank" rel="noopener noreferrer">
+                                    <img src='../assets/img/icon_github.svg' width='24' height='24' alt='GitHub' decoding='async' />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/hiro_portfolio" target="_blank" rel="noopener noreferrer">
+                                    <img src='../assets/img/icon_twitter.svg' width='24' height='24' alt='Twitter' decoding='async' />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </dialog><!-- / -->
+            <button class="l-header-menu-open js-header-menu-open" aria-label="メニューを開く">
+                <img src='../assets/img/icon-dots.svg' width='50' height='50' alt='メニューを開く' decoding='async' />
+            </button>
+        </div><!-- /.l-header -->
+        <main>
+            <section class="detail-kv l-container">
+                <div class="detail-kv-inner">
+                    <div class="detail-kv-content">
+                        <div class="detail-kv-breadcrumbs">
+                            <ul class="detail-kv-breadcrumbs-list">
+                                <li class="detail-kv-breadcrumbs-item">
+                                    <a href="../index.html">HOME</a>
+                                </li>
+                                <li class="detail-kv-breadcrumbs-item">
+                                    <a href="../index.html#detail">detail</a>
+                                </li>
+                                <li class="detail-kv-breadcrumbs-item">
+                                    <span class="detail-kv-breadcrumbs-item-text">ヘアサロンサイト</span>
+                                </li>
+                            </ul>
+                        </div><!-- / -->
+    
+                        <div class="detail-kv-title-link">
+                            <span class="detail-kv-title-en">detail DETAIL</span>
+                            <h2 class="detail-kv-title-ja">ヘアサロンサイト制作</h2>
+                        </div><!-- /.detail-kv-title-link -->
+    
+                        <p class="detail-kv-text">心地よい空間を提供するヘアサロンサイトを制作しました。</p><!-- / -->
+    
+                        <div class="detail-kv-tag">
+                            <span class="detail-kv-tag-item">Design</span>
+                            <span class="detail-kv-tag-item">Coding</span>
+                            <span class="detail-kv-tag-item">Responsive</span>
+                        </div>
+                    </div><!-- /.detail-content -->
+                    <div class="detail-kv-img">
+                        <img src='../assets/img/detail/detail3/device.webp' width='800' height='533' alt='' decoding='async' />
+                    </div>
+                </div class="">
+            </section><!-- /.detail-kv -->
+
+
+            <section class="detail-overview u-ptb l-container-s">
+                <h2 class="c-title-detail-wrap">
+                    <span class="c-title-detail-ja">プロジェクト概要</span>
+                    <span class="c-title-detail-en">Project Overview</span>
+                </h2>
+                <p class="detail-overview-text">
+                  本プロジェクトはポートフォリオ用に制作した仮想案件です。<br>
+                  落ち着いた空間と洗練されたデザインをコンセプトにした、ヘアサロンサイトを制作しました。<br>
+                  サロンの世界観が伝わるよう、余白や写真の見せ方を意識し、シンプルで上質感のあるデザインを設計しています。<br>
+                  また、スタイル一覧やニュース、お問い合わせ導線などを整理し、ユーザーが必要な情報へスムーズにアクセスできる構成を目指しました。<br>
+                  レスポンシブ対応を行い、スマートフォンでも快適に閲覧できるよう実装しています。
+                </p>
+              </section>
+
+              <section class="detail-client u-ptb">
+                <div class="l-container-s">
+                <h2 class="c-title-detail-wrap">
+                    <span class="c-title-detail-ja">クライアント</span>
+                    <span class="c-title-detail-en">Client</span>
+                </h2>
+                <div class="detail-client-cards">
+                  <div class="detail-client-card">
+                    <h3 class="detail-client-card-title">業種</h3>
+                    <p class="detail-client-card-text">落ち着いた空間と洗練されたデザインを特徴とする、トレンド感のあるヘアサロン。</p>
+                  </div>
+                  <div class="detail-client-card">
+                    <h3 class="detail-client-card-title">対象</h3>
+                    <p class="detail-client-card-text">20〜30代を中心に、トレンドに敏感な男女をターゲットにした地域密着型サロン。</p>
+                  </div>
+                  <div class="detail-client-card">
+                    <h3 class="detail-client-card-title">強み</h3>
+                    <p class="detail-client-card-text">丁寧なカウンセリングと高いデザイン提案力を強みとし、一人ひとりのライフスタイルに合わせたスタイルを提供。</p>
+                  </div>
+                  <div class="detail-client-card">
+                    <h3 class="detail-client-card-title">現状</h3>
+                    <p class="detail-client-card-text">SNSからの集客が中心となっており、店舗の世界観やメニュー情報をより分かりやすく伝えるため、Webサイトの刷新を検討。</p>
+                  </div>
+                </div>
+            </div>
+              </section>
+
+            <section class="detail-flow">
+                <div class="l-container">
+                    <ul class="detail-flow-list">
+                        <li class="detail-flow-item">
+                            <div class="detail-flow-item-img">
+                                <img src='../assets/img/detail/calendar.svg' width='24' height='24' alt='' decoding='async' />
+                            </div><!-- / -->
+                            <div class="detail-flow-item-content">
+                                <h3 class="detail-flow-item-title">制作期間</h3><!-- /.detail-flow-item-title -->
+                                <p class="detail-flow-item-text">2026年5月18日〜制作中</p><!-- /.detail-flow-item-text -->
+                            </div>
+                        </li>
+                        <li class="detail-flow-item">
+                            <div class="detail-flow-item-img">
+                                <img src='../assets/img/detail/code.svg' width='24' height='24' alt='' decoding='async' />
+                            </div><!-- / -->
+                            <div class="detail-flow-item-content">
+                                <h3 class="detail-flow-item-title">使用技術</h3><!-- /.detail-flow-item-title -->
+                                <p class="detail-flow-item-text">HTML / CSS / javascript</p><!-- /.detail-flow-item-text -->
+                            </div>
+                        </li>
+                        <li class="detail-flow-item">
+                            <div class="detail-flow-item-img">
+                                <img src='../assets/img/detail/user.svg' width='24' height='24' alt='' decoding='async' />
+                            </div><!-- / -->
+                            <div class="detail-flow-item-content">
+                                <h3 class="detail-flow-item-title">担当範囲</h3><!-- /.detail-flow-item-title -->
+                                <p class="detail-flow-item-text">デザイン / コーディング</p><!-- /.detail-flow-item-text -->
+                            </div>
+                        </li>
+                        <li class="detail-flow-item">
+                            <div class="detail-flow-item-img">
+                                <img src='../assets/img/detail/link.svg' width='24' height='24' alt='' decoding='async' />
+                            </div><!-- / -->
+                            <div class="detail-flow-item-content">
+                                <h3 class="detail-flow-item-title">サイトURL</h3><!-- /.detail-flow-item-title -->
+                                <p class="detail-flow-item-text">
+                                    <a href='./site-c/index.html' target='_blank' rel='noopener noreferrer' class="detail-flow-item-link u-text-hover detail-flow-item--url">サイトを見る</a>
+                                </p><!-- /.detail-flow-item-text -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+                <section class="detail-objective l-container u-ptb">
+                        <h2 class="c-title-detail-wrap">
+                            <span class="c-title-detail-ja">目的</span>
+                            <span class="c-title-detail-en">Objective</span>
+                        </h2><!-- /.detail-skill-item-title-wrapper -->
+
+                    <div class="detail-objective-content">
+                        <p class="detail-objective-content-text">
+                            <span>サロンの世界観やブランドイメージを伝えながら、ユーザーがスタイル情報や店舗情報へスムーズにアクセスできるWebサイトを目指しました。</span>
+                            <span>写真を活かしたレイアウトと余白設計を取り入れ、上質感と清潔感のあるデザインを意識しています。</span>
+                            <span>また、スマートフォンからの閲覧にも配慮し、幅広いユーザーにとって使いやすいUI設計を行いました。</span>
+                        </p><!-- /.detail-skill-item-content-text -->
+
+                    <div class="detail-objective-list">
+                        <div class="detail-objective-before">
+                            <h3 class="detail-objective-before-title">Before</h3><!-- /.detail-objective-before-title -->
+    
+                            <ul class="detail-objective-before-list">
+                                <li class="detail-objective-before-item">店舗の世界観や雰囲気が伝わりづらい</li>
+                                <li class="detail-objective-before-item">必要な情報が分散していて導線が分かりにくい</li>
+                                <li class="detail-objective-before-item">スマートフォンでの閲覧性や操作性に課題がある</li>
+                            </ul>
+                        </div><!-- /.detail-objective-before -->
+                        <div class="detail-objective-after">
+                            <h3 class="detail-objective-after-title">After</h3><!-- /.detail-objective-after-title -->
+    
+                            <ul class="detail-objective-after-list">
+                                <li class="detail-objective-after-item">サロンの雰囲気が伝わるデザインへ改善 </li>
+                                <li class="detail-objective-after-item">情報を整理し、導線を分かりやすく設計</li>
+                                <li class="detail-objective-after-item">スマートフォンでも快適に閲覧可能</li>
+                            </ul>
+                        </div><!-- /.detail-objective-after -->
+                    </div>
+                </div><!-- /.detail-objective-item-content -->
+                </section>
+            
+
+                <article class="detail-target l-container u-pb">
+                    <h2 class="c-title-detail-wrap">
+                        <span class="c-title-detail-ja">ターゲット</span>
+                        <span class="c-title-detail-en">Target</span>
+                    </h2><!-- /.detail-skill-item-title-wrapper -->
+
+                    <p class="detail-target-text">20〜30代を中心に、トレンドやデザイン性を重視する男女。</p><!-- /.detail-skill-item-content-text -->
+                </article>
+
+                <section class="detail-problem u-ptb">
+                    <div class="l-container-s">
+                        <h2 class="c-title-detail-wrap">
+                            <span class="c-title-detail-ja">課題</span>
+                            <span class="c-title-detail-en">Problem</span>
+                        </h2>
+                        <ul class="detail-problem-list">
+                          <li class="detail-problem-item">店舗の魅力や世界観が十分に伝わっていない</li>
+                          <li class="detail-problem-item">情報が分散しており導線が分かりにくい</li>
+                          <li class="detail-problem-item">スマートフォンでの閲覧性に課題がある</li>
+                        </ul>
+                    </div>
+                  </section>
+
+                  <section class="detail-solution u-ptb">
+                    <div class="l-container-s">
+                        <h2 class="c-title-detail-wrap">
+                            <span class="c-title-detail-ja">解決策</span>
+                            <span class="c-title-detail-en">Solution</span>
+                        </h2>
+                        <ul class="detail-solution-list">
+                          <li class="detail-solution-item">写真を活かし、世界観が伝わるデザインを設計</li>
+                          <li class="detail-solution-item">情報を整理し、分かりやすい導線へ改善</li>
+                          <li class="detail-solution-item">レスポンシブ対応で快適な閲覧環境を実装</li>
+                        </ul>
+                    </div>
+                  </section>
+
+                <section class="detail-point l-container u-ptb">
+                    <h2 class="c-title-detail-wrap">
+                        <span class="c-title-detail-ja">ポイント</span>
+                        <span class="c-title-detail-en">Point</span>
+                    </h2><!-- /.detail-skill-item-title-wrapper -->
+
+                    <div class="detail-point-wrap">
+                            <ul class="detail-point-list">
+                                <li class="detail-point-list-item">余白を活かしたシンプルで上質感のあるデザイン</li>
+                                <li class="detail-point-list-item">写真を引き立てるレイアウト設計</li>
+                                <li class="detail-point-list-item">スマートフォンでも見やすいレスポンシブ対応</li>
+                                <li class="detail-point-list-item">落ち着いたトーンで統一し、ブランドイメージを表現</li>
+                            </ul>
+                            <div class="detail-point-list-img">
+                                <img src='../assets/img/detail/detail3/detail2.webp' width='1000' height='1029' alt='カフェサイトのファーストビュー' decoding='async' />
+                                <img src='../assets/img/detail/detail3/detail3.webp' width='1000' height='1029' alt='カフェサイトのメニューセクション' decoding='async' />
+                                <img src='../assets/img/detail/detail3/detail4.webp' width='1000' height='1029' alt='カフェサイトのメニュー一覧' decoding='async' />
+                            </div><!-- / -->
+                        </div>
+            </section>
+
+            <section class="detail-design l-container u-ptb">
+                <h2 class="c-title-detail-wrap">
+                    <span class="c-title-detail-ja">デザイン</span>
+                    <span class="c-title-detail-en">Design</span>
+                </h2><!-- /.detail-skill-item-title-wrapper -->
+
+                <p class="detail-design-text">
+                    <span>白を基調としたミニマルなデザインをベースに、余白と写真を活かした上質感のあるビジュアル設計を行いました。</span>
+                    <span>また、落ち着いた配色とシンプルなUIで統一し、ヘアサロンの洗練された世界観が伝わるよう意識しています。</span>
+                </p><!-- /.detail-skill-item-content-text -->
+            </section>
+
+            <section class="detail-development l-container u-ptb">
+                <h2 class="c-title-detail-wrap">
+                    <span class="c-title-detail-ja">実装</span>
+                    <span class="c-title-detail-en">Development</span>
+                </h2>
+
+                    <ul class="detail-development-list">
+                        <li class="detail-development-item">HTML / SCSS / JavaScriptを用いて実装を行い、レスポンシブ対応やスムーズなUI表現を意識して制作しました。</li>
+                        <li class="detail-development-item">また、コンポーネント設計やSCSSによるスタイル管理を取り入れ、保守性を意識したコーディングを行っています。</li>
+                        <li class="detail-development-item">GSAPを使用し、動きのあるインタラクションやスライダー実装にも対応しています。</li>
+                    </ul>
+            </section>
+
+            <section class="detail-result u-ptb">
+                <div class="l-container">
+                    <h2 class="c-title-detail-wrap">
+                        <span class="c-title-detail-ja">成果</span>
+                        <span class="c-title-detail-en">Result</span>
+                    </h2>
+    
+                        <p class="lead">
+                            サロンの世界観と情報の見やすさを両立し、各デバイスで快適に閲覧できるWebサイトとして制作しました。
+                          </p>
+                        
+                          <ul class="detail-result-list">
+                            <li class="detail-result-item"><strong>導線設計</strong>を整理し、ユーザーが情報へアクセスしやすい構成へ改善</li>
+                            <li class="detail-result-item"><strong>世界観</strong>と情報の見やすさを両立したデザインを実現</li>
+                            <li class="detail-result-item"><strong>レスポンシブ対応</strong>により、各デバイスで快適な閲覧環境を構築 </li>
+                          </ul>
+                    
+                    <div class="detail-result-btn">
+                        <a href="../index.html#detail" class="detail-result-btn-link">detail一覧に戻る</a>
+                    </div><!-- /.detail-result-btn -->
+                </div>
+            </section>
+            
+        </main>
+        <footer class="footer footer--detail">
+            <p class="footer-text">まずはお気軽にご相談ください</p><!-- /.footer-text -->
+            <small class="footer-copyright">©2026 hiro All rights reserved.</small><!-- /.footer-copyright -->
+        </footer>
+    </body>
+</html>

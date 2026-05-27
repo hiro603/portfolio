@@ -1,4 +1,4 @@
-@use "../foundation" as f;
+@use "../foundation/tokens" as t;
 
 /*!
 layout > footer
@@ -14,7 +14,7 @@ layout > footer
 
   // &--detail {
   //     margin-top: 60px;
-  //     @include f.mq() {
+  //     @include t.mq() {
   //         margin-top: 80px;
   //     }
   // }
@@ -25,7 +25,7 @@ layout > footer
   flex-direction: column;
   gap: 10px;
 
-  @include f.mq() {
+  @include t.mq() {
     flex-direction: row;
     gap: 50px;
     align-items: center;
@@ -50,7 +50,7 @@ layout > footer
   align-items: center;
   gap: 20px;
 
-  @include f.mq() {
+  @include t.mq() {
     gap: 50px;
   }
 }
@@ -59,7 +59,7 @@ layout > footer
   width: 30px;
   aspect-ratio: 1 / 1;
 
-  @include f.mq() {
+  @include t.mq() {
     width: 40px;
   }
 }

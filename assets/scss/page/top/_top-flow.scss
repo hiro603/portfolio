@@ -1,4 +1,4 @@
-@use "../../foundation" as f;
+@use "../../foundation/tokens" as t;
 
 /*!
 page > top > top-flow
@@ -19,7 +19,7 @@ page > top > top-flow
   align-items: center;
   gap: 20px;
 
-  @include f.mq() {
+  @include t.mq() {
     margin-top: 60px;
     flex-direction: row;
     gap: 40px;
@@ -35,7 +35,7 @@ page > top > top-flow
   display: inline-block;
   padding-block: 36px;
 
-  @include f.mq() {
+  @include t.mq() {
     &:not(:last-child)::before {
       content: "";
       height: 20px;

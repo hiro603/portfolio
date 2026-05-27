@@ -1,4 +1,4 @@
-@use "../../foundation" as f;
+@use "../../foundation/tokens" as t;
 
 /*!
 page > top > top-skill
@@ -16,7 +16,7 @@ page > top > top-skill
   grid-template-columns: 1fr;
   gap: 20px;
 
-  @include f.mq() {
+  @include t.mq() {
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-top: 60px;

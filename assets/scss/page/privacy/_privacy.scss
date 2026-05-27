@@ -1,5 +1,4 @@
-@use "../../foundation" as f;
-
+@use "../../foundation/tokens" as t;
 
 /*!
 page > privacy > privacy
@@ -8,7 +7,7 @@ page > privacy > privacy
 .privacy {
   margin-top: 80px;
 
-  @include f.mq() {
+  @include t.mq() {
     margin-top: 120px;
   }
 }
@@ -33,7 +32,7 @@ page > privacy > privacy
     letter-spacing: 0.1em;
   }
 
-  @include f.mq() {
+  @include t.mq() {
     font-size: clamp(16px, 2.4vw, 20px);
 
     &--large {

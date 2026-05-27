@@ -184,6 +184,107 @@ iframe {
 }
 
 /*!
+foundation > tokens > index
+------------------------------
+*/
+/*!
+foundation > tokens > bleakpoints
+------------------------------
+*/
+/*!
+foundation > tokens > color
+------------------------------
+*/
+:root {
+  --color-bg-base: #ffffff;
+  --color-font-base: #333333;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: #888888;
+  --color-gray-light: #f5f5f5;
+  --color-orange: #ff5722;
+  --color-blue: #38BDF8;
+  --color-border: #e5e7eb;
+}
+
+/*!
+foundation > tokens > font
+------------------------------
+*/
+:root {
+  --font-family-base: "Noto Sans JP", sans-serif;
+  --font-family-en: "Dosis", sans-serif;
+}
+
+/*!
+foundation > tokens > width
+------------------------------
+*/
+:root {
+  --content-width-sm: 800px;
+  --content-width-md: 1200px;
+  --content-width-lg: 1366px;
+}
+
+/*!
+foundation > tokens > gutter
+------------------------------
+*/
+:root {
+  --gutter-sm: 16px;
+  --gutter-md: 24px;
+  --gutter-lg: 32px;
+}
+
+/*!
+foundation > tokens > space
+------------------------------
+*/
+:root {
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-xxl: 60px;
+  --space-xxxl: 80px;
+  --space-xxxxl: 100px;
+}
+
+/*!
+foundation > tokens > radius
+------------------------------
+*/
+:root {
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 100vh;
+}
+
+/*!
+foundation > tokens > shadow
+------------------------------
+*/
+:root {
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
+  --shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.14);
+}
+
+/*!
+foundation > tokens > z-index
+------------------------------
+*/
+:root {
+  --z-index-negative: -1;
+  --z-index-base: 1;
+  --z-index-header: 30;
+}
+
+/*!
 foundation > base
 ------------------------------
 */
@@ -202,33 +303,6 @@ body {
   body {
     font-size: 1.125rem;
   }
-}
-
-/*!
-foundation > variables
-------------------------------
-*/
-:root {
-  --font-family-base: "Noto Sans JP", sans-serif;
-  --font-family-en: "Dosis", sans-serif;
-  --content-width-sm: 800px;
-  --content-width-md: 1200px;
-  --content-width-lg: 1366px;
-  --gutter-sm: 16px;
-  --gutter-md: 24px;
-  --gutter-lg: 32px;
-  --color-bg-base: #ffffff;
-  --color-font-base: #333333;
-  --color-white: #ffffff;
-  --color-black: #000000;
-  --color-gray: #888888;
-  --color-gray-light: #f5f5f5;
-  --color-orange: #ff5722;
-  --color-blue: #38BDF8;
-  --color-border: #e5e7eb;
-  --z-index-negative: -1;
-  --z-index-base: 1;
-  --z-index-header: 30;
 }
 
 /*!
@@ -505,6 +579,16 @@ component > form
 }
 
 /*!
+component > notice
+------------------------------
+*/
+.c-notice {
+  font-size: 0.75rem;
+  color: var(--color-gray);
+  text-align: center;
+}
+
+/*!
 layout > container
 ------------------------------
 */
@@ -728,7 +812,7 @@ layout > header
 
 .l-header-menu-nav-cta {
   padding-block: 60px;
-  background-image: url(../../../assets/img/menu-cta.webp);
+  background-image: url(../../../site-b/assets/img/menu-cta.webp);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -740,7 +824,7 @@ layout > header
   }
 }
 .l-header-menu-nav-cta--detail {
-  background-image: url(../../../assets/img/detail/detail1/service1.webp);
+  background-image: url(../../../site-b/assets/img/detail/detail1/service1.webp);
 }
 
 .l-header-menu-nav-cta-text {
@@ -773,8 +857,8 @@ layout > header
   display: inline-block;
   width: 20px;
   aspect-ratio: 1/1;
-  -webkit-mask-image: url("../../../assets/img/detail/detail2/icon_mail.svg");
-          mask-image: url("../../../assets/img/detail/detail2/icon_mail.svg");
+  -webkit-mask-image: url("../../../site-b/assets/img/detail/detail2/icon_mail.svg");
+          mask-image: url("../../../site-b/assets/img/detail/detail2/icon_mail.svg");
   -webkit-mask-size: contain;
           mask-size: contain;
   -webkit-mask-repeat: no-repeat;
@@ -919,12 +1003,15 @@ page > top > top-kv
   background-size: cover;
   background-position: center;
   position: relative;
+  overflow: hidden;
 }
 .manivisual::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(15, 23, 42, 0.58)), color-stop(45%, rgba(15, 23, 42, 0.35)), to(rgba(15, 23, 42, 0.12)));
+  background: linear-gradient(90deg, rgba(15, 23, 42, 0.58) 0%, rgba(15, 23, 42, 0.35) 45%, rgba(15, 23, 42, 0.12) 100%);
+  z-index: 1;
 }
 
 .manivisual-text {
@@ -937,6 +1024,7 @@ page > top > top-kv
   letter-spacing: -0.02em;
   color: var(--color-white);
   text-transform: uppercase;
+  z-index: 2;
 }
 .manivisual-text span {
   color: var(--color-orange);
@@ -1822,6 +1910,7 @@ page > detail > detail-objective
 .detail-objective-after {
   padding: 16px;
   border-radius: 6px;
+  position: relative;
 }
 
 .detail-objective-before-title,
@@ -1872,6 +1961,10 @@ page > detail > detail-objective
 
 .detail-objective-after-item::before {
   background-color: var(--color-white);
+}
+
+.detail-objective-before-list {
+  position: relative;
 }
 
 /*!

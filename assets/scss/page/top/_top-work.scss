@@ -1,4 +1,4 @@
-@use "../../foundation" as f;
+@use "../../foundation/tokens" as t;
 
 /*!
 page > top > top-work
@@ -16,7 +16,7 @@ page > top > top-work
   grid-template-columns: 1fr;
   gap: 20px;
 
-  @include f.mq() {
+  @include t.mq() {
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-top: 60px;
@@ -50,7 +50,7 @@ page > top > top-work
 .top-work-item-content {
   padding: 20px;
 
-  @include f.mq() {
+  @include t.mq() {
     padding: 16px;
   }
 }
@@ -59,7 +59,7 @@ page > top > top-work
   font-size: 1.375rem;
   font-weight: 500;
 
-  @include f.mq() {
+  @include t.mq() {
   }
 }
 

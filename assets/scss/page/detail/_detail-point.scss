@@ -1,4 +1,4 @@
-@use "../../foundation" as f;
+@use "../../foundation/tokens" as t;
 
 /*!
 page > detail > detail-point
@@ -8,7 +8,7 @@ page > detail > detail-point
 }
 
 .detail-point-wrap {
-  @include f.mq() {
+  @include t.mq() {
     display: grid;
     grid-template-columns: 40% 1fr;
     gap: 80px;
@@ -28,7 +28,7 @@ page > detail > detail-point
   padding-left: 12px;
   font-weight: bold;
 
-  @include f.mq() {
+  @include t.mq() {
     width: 350px;
   }
 
@@ -43,7 +43,7 @@ page > detail > detail-point
   gap: 30px;
   margin-top: 40px;
 
-  @include f.mq() {
+  @include t.mq() {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;

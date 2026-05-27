@@ -1,11 +1,11 @@
-@use "../../foundation" as f;
+@use "../../foundation/tokens" as t;
 
 /*!
 page > about > about-company
 ------------------------------
 */
 .detail-flow {
-  @include f.mq() {
+  @include t.mq() {
     background-color: var(--color-gray);
   }
 }
@@ -15,7 +15,7 @@ page > about > about-company
   flex-direction: column;
   gap: 4px;
 
-  @include f.mq() {
+  @include t.mq() {
     flex-direction: row;
     gap: 0;
     justify-content: space-between;
@@ -31,7 +31,7 @@ page > about > about-company
   color: var(--color-white);
   border-radius: 6px;
 
-  @include f.mq() {
+  @include t.mq() {
     grid-template-columns: 1fr;
     border-radius: 0;
   }
@@ -57,7 +57,7 @@ page > about > about-company
 .detail-flow-item-img {
   width: 24px;
 
-  @include f.mq() {
+  @include t.mq() {
     display: none;
   }
 }

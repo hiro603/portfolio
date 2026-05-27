@@ -1,4 +1,4 @@
-@use "../../foundation" as f;
+@use "../../foundation/tokens" as t;
 
 /*!
 page > top > top-kv
@@ -13,11 +13,19 @@ page > top > top-kv
   background-position: center;
   position: relative;
 
+  overflow: hidden;
+
   &::before {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background: linear-gradient(
+      90deg,
+      rgba(15, 23, 42, 0.58) 0%,
+      rgba(15, 23, 42, 0.35) 45%,
+      rgba(15, 23, 42, 0.12) 100%
+    );
+    z-index: 1;
   }
 }
 
@@ -31,13 +39,14 @@ page > top > top-kv
   letter-spacing: -0.02em;
   color: var(--color-white);
   text-transform: uppercase;
+  z-index: 2;
 
   span {
     color: var(--color-orange);
     font-weight: 800;
   }
 
-  @include f.mq() {
+  @include t.mq() {
     top: 350px;
     left: 65px;
     font-size: 6rem;
