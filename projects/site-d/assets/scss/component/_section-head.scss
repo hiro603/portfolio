@@ -1,0 +1,30 @@
+@use "../foundation" as f;
+
+// ---------- section heading ----------
+.section-head {
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  margin-bottom: 54px;
+
+  &__title {
+    font-family: var(--font-family-display);
+    font-weight: 300;
+    font-size: 40px;
+    color: #46423d;
+    margin: 0;
+    letter-spacing: .01em;
+  }
+
+  &__jp {
+    font-size: 13px;
+    letter-spacing: .34em;
+    color: #9a938b;
+    margin-top: 10px;
+    font-weight: 400;
+  }
+
+  @media (min-width: f.$bp-xxs) {
+    &__title { font-size: 54px; }
+  }
+}

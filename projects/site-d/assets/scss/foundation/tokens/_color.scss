@@ -1,0 +1,50 @@
+:root {
+  // ===== primitive =====
+  --color-white:         #ffffff;
+  --color-cream-50:      #FCF8F2;
+  --color-cream-100:     #FBF4EE;
+  --color-stone-400:     #e7ddd2;
+  --color-stone-600:     #9a938b;
+  --color-stone-700:     #8a847d;
+  --color-stone-800:     #6f6a64;
+  --color-stone-900:     #4a4642;
+  --color-brown-800:     #5a544e;
+  --color-brown-900:     #46423d;
+  --color-dark-900:      #403c38;
+
+  --color-pink-300:      #FBD7E4;
+  --color-pink-400:      #F4A2C0;
+  --color-pink-500:      #F178A6;
+  --color-mint-200:      #C3E6DE;
+  --color-mint-400:      #8BCFBC;
+  --color-mint-500:      #79C6B2;
+  --color-yellow-300:    #FBE9AE;
+  --color-yellow-400:    #F2CE6A;
+  --color-lavender-200:  #E3D9F4;
+  --color-lavender-400:  #C9BBE8;
+  --color-blue-200:      #D6E6F6;
+  --color-blue-400:      #A9CBEC;
+
+  // ===== semantic =====
+  --bg-main:       var(--color-cream-50);
+  --bg-soft:       var(--color-cream-100);
+  --line:          var(--color-stone-400);
+
+  --pink:          var(--color-pink-400);
+  --pink-strong:   var(--color-pink-500);
+  --pink-soft:     var(--color-pink-300);
+  --mint:          var(--color-mint-400);
+  --mint-strong:   var(--color-mint-500);
+  --mint-pale:     var(--color-mint-200);
+  --yellow:        var(--color-yellow-400);
+  --yellow-soft:   var(--color-yellow-300);
+  --lavender:      var(--color-lavender-400);
+  --lavender-soft: var(--color-lavender-200);
+  --blue:          var(--color-blue-400);
+  --blue-soft:     var(--color-blue-200);
+
+  --color-bg-base:   var(--color-cream-50);
+  --color-bg-soft:   var(--color-cream-100);
+  --color-text-base: var(--color-stone-900);
+  --color-text-soft: var(--color-stone-800);
+}
