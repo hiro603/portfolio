@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Portfolio</title>
+        <meta name="description" content="ページの説明" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+
+        <!-- favicon/webclipicon -->
+        <link rel="icon" href="../assets/img/favicon/favicon.ico" />
+        <link rel="icon" href="../assets/img/favicon/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="../assets/img/favicon/apple-touch-icon.png" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <!-- css -->
+        <link rel="stylesheet" href="../assets/css/style.css" />
+
+        <!-- js -->
+         <script src="../assets/js/vendor/gsap.min.js" defer></script>
+         <script src="../assets/js/vendor/ScrollTrigger.min.js" defer></script>
+        <script type="module" src="../assets/js/main.js"></script>
+
+        <!-- noindex -->
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <div class="l-header js-header l-header--detail js-header-trigger">
+            <div class="l-header-logo">
+                <a href="../index.html" class="l-header-logo-link">
+                    <span class="l-header-logo-link-en l-header-logo-black">hiro</span>
+                    <span class="l-header-logo-link-ja l-header-logo-black">Frontend Developer</span>
+                </a>
+            </div><!-- /.l-header-logo -->
+            <dialog class="l-header-menu js-header-menu" aria-label="メニュー">
+                <button class="l-header-menu-close js-header-menu-close" aria-label="メニューを閉じる">
+                    <img src='../assets/img/icon-cross.svg' width='50' height='50' alt='メニューを閉じる' decoding='async' />
+                </button>
+                <nav class="l-header-menu-nav">
+                    <ul class="l-header-menu-nav-list">
+                        <li class="l-header-menu-nav-item">
+                            <a href="../index.html#detail" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">Top</span>
+                                <span class="l-header-menu-nav-link-ja">お仕事</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="../index.html#about" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">About</span>
+                                <span class="l-header-menu-nav-link-ja">私について</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="../index.html#skill" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">Skill</span>
+                                <span class="l-header-menu-nav-link-ja">技術</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="../index.html#flow" class="l-header-menu-nav-link u-text-hover">
+                                <span class="l-header-menu-nav-link-en">Flow</span>
+                                <span class="l-header-menu-nav-link-ja">制作の流れ</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-nav-item">
+                            <a href="../index.html#contact" class="l-header-menu-nav-link u-text-hover l-header-menu-nav-link--contact">
+                                <span class="l-header-menu-nav-link-en">Contact</span>
+                                <span class="l-header-menu-nav-link-ja">お問い合わせ</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="l-header-menu-nav-cta l-header-menu-nav-cta--detail">
+                        <p class="l-header-menu-nav-cta-text">
+                            <span>Web制作の</span>
+                            <span>ご相談はこちら</span>
+                        </p>
+                        <div class="l-header-menu-nav-cta-button">
+                            <a href="index.html#contact" class="l-header-menu-nav-cta-button-link c-button-large c-button-large--white">お問い合わせ</a>
+                        </div>
+                    </div><!-- /.l-header-menu-nav-cta -->
+
+                    <div class="l-header-menu-footer">
+                        <h2 class="l-header-menu-footer-title">hiro Portfolio</h2>
+                        <small class="l-header-menu-footer-copyright">© 2026 hiro</small>
+                        <ul class="l-header-menu-footer-list">
+                            <li class="l-header-menu-footer-item">
+                                <a href="https://github.com/hiro-portfolio" target="_blank" rel="noopener noreferrer">
+                                    <img src='../assets/img/icon_github.svg' width='24' height='24' alt='GitHub' decoding='async' />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/hiro_portfolio" target="_blank" rel="noopener noreferrer">
+                                    <img src='../assets/img/icon_twitter.svg' width='24' height='24' alt='Twitter' decoding='async' />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </dialog><!-- / -->
+            <button class="l-header-menu-open js-header-menu-open" aria-label="メニューを開く">
+                <img src='../assets/img/icon-dots.svg' width='50' height='50' alt='メニューを開く' decoding='async' />
+            </button>
+        </div><!-- /.l-header -->
+        <main>
+            <section class="p-detail-kv l-container">
+                <div class="p-detail-kv-inner">
+                    <div class="p-detail-kv-content">
+                        <div class="p-detail-kv-breadcrumbs">
+                            <ul class="p-detail-kv-breadcrumbs-list">
+                                <li class="p-detail-kv-breadcrumbs-item">
+                                    <a href="../index.html">HOME</a>
+                                </li>
+                                <li class="p-detail-kv-breadcrumbs-item">
+                                    <a href="../index.html#detail">detail</a>
+                                </li>
+                                <li class="p-detail-kv-breadcrumbs-item">
+                                    <span class="p-detail-kv-breadcrumbs-item-text">ハンドメイドアクセサリーEC</span>
+                                </li>
+                            </ul>
+                        </div><!-- / -->
+
+                        <div class="p-detail-kv-title-link">
+                            <span class="p-detail-kv-title-en">detail DETAIL</span>
+                            <h2 class="p-detail-kv-title-ja">ハンドメイドアクセサリーECサイト制作</h2>
+                        </div><!-- /.p-detail-kv-title-link -->
+
+                        <p class="p-detail-kv-text">ハンドメイドアクセサリーブランドのECサイトを制作しました。</p><!-- / -->
+
+                        <div class="p-detail-kv-tag">
+                            <span class="p-detail-kv-tag-item">Design</span>
+                            <span class="p-detail-kv-tag-item">Coding</span>
+                            <span class="p-detail-kv-tag-item">Responsive</span>
+                        </div>
+                    </div><!-- /.detail-content -->
+                    <div class="p-detail-kv-img">
+                        <img src='../assets/img/detail/detail5/detail5.webp' width='800' height='548' alt='' decoding='async' />
+                    </div>
+                </div class="">
+            </section><!-- /.p-detail-kv -->
+
+
+            <section class="p-detail-overview u-ptb l-container-s">
+                <h2 class="c-title-detail-wrap">
+                    <span class="c-title-detail-ja">プロジェクト概要</span>
+                    <span class="c-title-detail-en">Project Overview</span>
+                </h2>
+                <p class="p-detail-overview-text">
+                  本プロジェクトはポートフォリオ用に制作した仮想案件です。<br>
+                  ハンドメイドアクセサリーブランド「LIGNE」を想定し、商品一覧から商品詳細・カートまでの購入体験を一貫して設計したECサイトを制作しました。<br>
+                  ブランドの世界観を伝えるトップページに加え、ショップ・商品詳細・カート・会員登録・ご利用ガイド・FAQなど、ECに必要なページを一通り実装しています。<br>
+                  繊細で温かみのある商品の魅力が伝わるデザインと、迷わず購入まで進める導線設計を両立することを目的としています。
+                </p>
+              </section>
+
+              <section class="p-detail-client u-ptb">
+                <div class="l-container-s">
+                <h2 class="c-title-detail-wrap">
+                    <span class="c-title-detail-ja">クライアント</span>
+                    <span class="c-title-detail-en">Client</span>
+                </h2>
+                <div class="p-detail-client-cards">
+                  <div class="p-detail-client-card">
+                    <h3 class="p-detail-client-card-title">業種</h3>
+                    <p class="p-detail-client-card-text">ハンドメイドアクセサリーの製作・販売を行うD2Cブランド</p>
+                  </div>
+                  <div class="p-detail-client-card">
+                    <h3 class="p-detail-client-card-title">対象</h3>
+                    <p class="p-detail-client-card-text">20〜40代の女性。日常に取り入れやすく、特別感のあるアクセサリーを求めている。</p>
+                  </div>
+                  <div class="p-detail-client-card">
+                    <h3 class="p-detail-client-card-title">強み</h3>
+                    <p class="p-detail-client-card-text">一点一点手仕事で仕上げる繊細なデザインと、素材にこだわった高い品質。</p>
+                  </div>
+                  <div class="p-detail-client-card">
+                    <h3 class="p-detail-client-card-title">現状</h3>
+                    <p class="p-detail-client-card-text">SNSや委託販売が中心で、自社で商品を販売できるECサイトを持っていない。</p>
+                  </div>
+                </div>
+            </div>
+              </section>
+
+            <section class="p-detail-flow">
+                <div class="l-container">
+                    <ul class="p-detail-flow-list">
+                        <li class="p-detail-flow-item">
+                            <div class="p-detail-flow-item-img">
+                                <img src='../assets/img/detail/calendar.svg' width='24' height='24' alt='' decoding='async' />
+                            </div><!-- / -->
+                            <div class="p-detail-flow-item-content">
+                                <h3 class="p-detail-flow-item-title">制作期間</h3><!-- /.p-detail-flow-item-title -->
+                                <p class="p-detail-flow-item-text">2026年6月9日〜2026年6月12日(4日)</p><!-- /.p-detail-flow-item-text -->
+                            </div>
+                        </li>
+                        <li class="p-detail-flow-item">
+                            <div class="p-detail-flow-item-img">
+                                <img src='../assets/img/detail/code.svg' width='24' height='24' alt='' decoding='async' />
+                            </div><!-- / -->
+                            <div class="p-detail-flow-item-content">
+                                <h3 class="p-detail-flow-item-title">使用技術</h3><!-- /.p-detail-flow-item-title -->
+                                <p class="p-detail-flow-item-text">HTML / CSS / javascript</p><!-- /.p-detail-flow-item-text -->
+                            </div>
+                        </li>
+                        <li class="p-detail-flow-item">
+                            <div class="p-detail-flow-item-img">
+                                <img src='../assets/img/detail/user.svg' width='24' height='24' alt='' decoding='async' />
+                            </div><!-- / -->
+                            <div class="p-detail-flow-item-content">
+                                <h3 class="p-detail-flow-item-title">担当範囲</h3><!-- /.p-detail-flow-item-title -->
+                                <p class="p-detail-flow-item-text">デザイン / コーディング</p><!-- /.p-detail-flow-item-text -->
+                            </div>
+                        </li>
+                        <li class="p-detail-flow-item">
+                            <div class="p-detail-flow-item-img">
+                                <img src='../assets/img/detail/link.svg' width='24' height='24' alt='' decoding='async' />
+                            </div><!-- / -->
+                            <div class="p-detail-flow-item-content">
+                                <h3 class="p-detail-flow-item-title">サイトURL</h3><!-- /.p-detail-flow-item-title -->
+                                <p class="p-detail-flow-item-text">
+                                    <a href='./site-e/index.html' target='_blank' rel='noopener noreferrer' class="p-detail-flow-item-link u-text-hover p-detail-flow-item--url">サイトを見る</a>
+                                </p><!-- /.p-detail-flow-item-text -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+                <section class="p-detail-objective l-container u-ptb">
+                        <h2 class="c-title-detail-wrap">
+                            <span class="c-title-detail-ja">目的</span>
+                            <span class="c-title-detail-en">Objective</span>
+                        </h2><!-- /.detail-skill-item-title-wrapper -->
+
+                    <div class="p-detail-objective-content">
+                        <p class="p-detail-objective-content-text">
+                            <span>ブランドの世界観を保ちながら、商品との出会いから購入完了までをストレスなく進められる自社ECサイトを構築する。</span>
+                            <span>商品一覧の探しやすさと商品詳細の情報量を両立し、初めて訪れたユーザーでも安心して購入できる体験を目指しました。</span>
+                        </p><!-- /.detail-skill-item-content-text -->
+
+                    <div class="p-detail-objective-list">
+                        <div class="p-detail-objective-before">
+                            <h3 class="p-detail-objective-before-title">Before</h3><!-- /.p-detail-objective-before-title -->
+
+                            <ul class="p-detail-objective-before-list">
+                                <li class="p-detail-objective-before-item">販売チャネルがSNSと委託販売に限られ、機会損失が発生している</li>
+                                <li class="p-detail-objective-before-item">商品を一覧で比較したり、カテゴリから探したりする手段がない</li>
+                                <li class="p-detail-objective-before-item">送料や返品などの購入情報がまとまっておらず、購入のハードルが高い</li>
+                            </ul>
+                        </div><!-- /.p-detail-objective-before -->
+                        <div class="p-detail-objective-after">
+                            <h3 class="p-detail-objective-after-title">After</h3><!-- /.p-detail-objective-after-title -->
+
+                            <ul class="p-detail-objective-after-list">
+                                <li class="p-detail-objective-after-item">商品一覧からカートまで完結する自社販売チャネルを確立</li>
+                                <li class="p-detail-objective-after-item">カテゴリ分類と一覧ページで、目的の商品にすぐ辿り着ける構成を実現</li>
+                                <li class="p-detail-objective-after-item">ご利用ガイド・FAQを整備し、安心して購入できる環境を構築</li>
+                            </ul>
+                        </div><!-- /.p-detail-objective-after -->
+                    </div>
+                </div><!-- /.p-detail-objective-content -->
+                </section>
+
+
+                <article class="p-detail-target l-container u-pb">
+                    <h2 class="c-title-detail-wrap">
+                        <span class="c-title-detail-ja">ターゲット</span>
+                        <span class="c-title-detail-en">Target</span>
+                    </h2><!-- /.detail-skill-item-title-wrapper -->
+
+                    <p class="p-detail-target-text">日常に寄り添う、自分だけのアクセサリーを探している20〜40代の女性。</p><!-- /.detail-skill-item-content-text -->
+                </article>
+
+                <section class="p-detail-problem u-ptb">
+                    <div class="l-container-s">
+                        <h2 class="c-title-detail-wrap">
+                            <span class="c-title-detail-ja">課題</span>
+                            <span class="c-title-detail-en">Problem</span>
+                        </h2>
+                        <ul class="p-detail-problem-list">
+                          <li class="p-detail-problem-item">SNSの投稿だけでは商品数が増えるほど過去の商品が埋もれ、比較・検討がしにくい。</li>
+                          <li class="p-detail-problem-item">素材・サイズ・お手入れ方法などの詳細情報を伝える場がなく、購入をためらう要因になっている。</li>
+                          <li class="p-detail-problem-item">注文のやり取りがDM中心で手間がかかり、購入完了までの離脱が多い。</li>
+                        </ul>
+                    </div>
+                  </section>
+
+                  <section class="p-detail-solution u-ptb">
+                    <div class="l-container-s">
+                        <h2 class="c-title-detail-wrap">
+                            <span class="c-title-detail-ja">解決策</span>
+                            <span class="c-title-detail-en">Solution</span>
+                        </h2>
+                        <ul class="p-detail-solution-list">
+                          <li class="p-detail-solution-item">カテゴリ別の商品一覧ページを用意し、目的の商品へ直感的に辿り着ける構成に整理。</li>
+                          <li class="p-detail-solution-item">商品詳細ページに素材・サイズなどの情報を集約し、購入判断に必要な材料を提示。</li>
+                          <li class="p-detail-solution-item">カート・ご利用ガイド・FAQまでの導線を整備し、迷わず購入完了まで進める流れを設計。</li>
+                        </ul>
+                    </div>
+                  </section>
+
+                <section class="p-detail-point l-container u-ptb">
+                    <h2 class="c-title-detail-wrap">
+                        <span class="c-title-detail-ja">ポイント</span>
+                        <span class="c-title-detail-en">Point</span>
+                    </h2><!-- /.detail-skill-item-title-wrapper -->
+
+                    <div class="p-detail-point-wrap">
+                            <ul class="p-detail-point-list">
+                                <li class="p-detail-point-list-item">ブランドの世界観を伝える余白を活かしたビジュアル設計</li>
+                                <li class="p-detail-point-list-item">カテゴリから商品を探しやすい一覧ページのUI設計</li>
+                                <li class="p-detail-point-list-item">カートから購入完了までを意識した導線設計</li>
+                            </ul>
+                            <div class="p-detail-point-list-img">
+                                <img src='./site-e/assets/img/images/Lumiere_Necklace.webp' width='1280' height='853' alt='ネックレスの商品写真' decoding='async' />
+                                <img src='./site-e/assets/img/images/Fleur_Earring.webp' width='1280' height='853' alt='イヤリングの商品写真' decoding='async' />
+                                <img src='./site-e/assets/img/images/Doux_Bracelet.webp' width='1280' height='853' alt='ブレスレットの商品写真' decoding='async' />
+                            </div><!-- / -->
+                        </div>
+            </section>
+
+            <section class="p-detail-design l-container u-ptb">
+                <h2 class="c-title-detail-wrap">
+                    <span class="c-title-detail-ja">デザイン</span>
+                    <span class="c-title-detail-en">Design</span>
+                </h2><!-- /.detail-skill-item-title-wrapper -->
+
+                <p class="p-detail-design-text">
+                    <span>手仕事の繊細さと温かみが伝わるよう、余白を活かした上品なトーンでデザインしました。商品写真を主役に、装飾を抑えた構成にしています。</span>
+                    <span>ECサイトとして情報の優先度を整理し、価格や購入ボタンなど行動につながる要素が自然と目に入るレイアウトを意識しています。</span>
+                </p><!-- /.detail-skill-item-content-text -->
+            </section>
+
+            <section class="p-detail-development l-container u-ptb">
+                <h2 class="c-title-detail-wrap">
+                    <span class="c-title-detail-ja">実装</span>
+                    <span class="c-title-detail-en">Development</span>
+                </h2>
+
+                    <ul class="p-detail-development-list">
+                        <li class="p-detail-development-item">商品一覧・商品詳細・カートなど、ECに必要な複数ページを共通パーツで効率的に構築。</li>
+                        <li class="p-detail-development-item">SCSSを用いて保守性・再利用性の高いスタイル設計を実施。</li>
+                        <li class="p-detail-development-item">JavaScriptでカートへの追加・数量変更などのインタラクションを実装。</li>
+                        <li class="p-detail-development-item">モバイルファーストでコーディングし、スマートフォンでも快適に購入できるUIを実現。</li>
+                    </ul>
+            </section>
+
+            <section class="p-detail-result u-ptb">
+                <div class="l-container">
+                    <h2 class="c-title-detail-wrap">
+                        <span class="c-title-detail-ja">制作プロセス</span>
+                        <span class="c-title-detail-en">Production Process</span>
+                    </h2>
+
+                        <p class="p-lead">
+                            ブランドの世界観と購入のしやすさを両立し、各デバイスで快適に買い物ができるECサイトとして制作しました。
+                          </p>
+
+                          <ul class="p-detail-result-list">
+                            <li class="p-detail-result-item"><strong>GPTを活用したデザインイメージの作成：</strong>GPTを活用してブランドコンセプトやビジュアルイメージを検討し、ハンドメイドアクセサリーECにふさわしい世界観やページ構成の方向性を整理しました。</li>
+                            <li class="p-detail-result-item"><strong>Claude DesignとClaude Codeによる初期実装：</strong>Claude DesignとClaude Codeを活用してHTML・CSS・JavaScriptの初期実装を行い、複数ページにわたるECサイトを効率的に構築しました。</li>
+                            <li class="p-detail-result-item"><strong>手作業による品質向上：</strong>生成されたコードをベースに、クラス設計の見直しやSCSSの整理、レスポンシブ調整、カート周りのUI実装を手作業で行いました。保守性・可読性・再利用性を意識しながら品質を高めています。</li>
+                          </ul>
+
+                    <div class="p-detail-result-btn">
+                        <a href="../index.html#detail" class="p-detail-result-btn-link">detail一覧に戻る</a>
+                    </div><!-- /.p-detail-result-btn -->
+                </div>
+            </section>
+
+        </main>
+        <footer class="l-footer l-footer--detail">
+            <p class="l-footer-text">まずはお気軽にご相談ください</p><!-- /.l-footer-text -->
+            <small class="l-footer-copyright">©2026 hiro All rights reserved.</small><!-- /.l-footer-copyright -->
+        </footer>
+    </body>
+</html>
