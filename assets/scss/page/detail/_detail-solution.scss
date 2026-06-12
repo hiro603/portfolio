@@ -1,15 +1,15 @@
-@use "../../foundation" as f;
+@use "../../foundation/tokens" as t;
 
 
 /*!
 page > detail > detail-solution
 ------------------------------
 */
-.detail-solution {
+.p-detail-solution {
 
 }
 
-.detail-solution-title {
+.p-detail-solution-title {
     font-size: clamp(24px, 3vw, 32px);
     font-weight: bold;
     letter-spacing: 0.1em;
@@ -17,11 +17,11 @@ page > detail > detail-solution
     font-family: var(--font-family-en);
 }
 
-.detail-solution-list {
+.p-detail-solution-list {
     margin-top: 20px;
 }
 
-.detail-solution-item {
+.p-detail-solution-item {
     border-left: 3px solid #3b82f6; /* 青系 */
   padding-left: 12px;
   font-weight: bold;

@@ -1,0 +1,20 @@
+// _breakpoint.scss
+@use "sass:map";
+
+$breakpoints: (
+  "sm":  768px,
+  "md":  960px,
+  "lg": 1024px,
+  "xl": 1366px,
+);
+
+$bp-md:  960px;
+$bp-sm:  768px;
+$bp-xs:  720px;
+$bp-xxs: 560px;
+
+@mixin mq($breakpoint: sm) {
+  @media screen and (min-width: map.get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}

@@ -1,4 +1,4 @@
-@use "mixin" as m;
+@use "../foundation/tokens" as t;
 /*!
 foundation > base
 ------------------------------
@@ -15,7 +15,7 @@ body {
     color: var(--color-font-base);
     letter-spacing: 0.05em;
 
-    @include m.mq() {
+    @include t.mq() {
         font-size: 1.125rem;
     }
 }

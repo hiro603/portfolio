@@ -1,19 +1,18 @@
-@use "../../foundation" as f;
-
+@use "../../foundation/tokens" as t;
 
 /*!
 page > privacy > privacy
 ------------------------------
 */
-.privacy {
+.p-privacy {
   margin-top: 80px;
 
-  @include f.mq() {
+  @include t.mq() {
     margin-top: 120px;
   }
 }
 
-.privacy-content {
+.p-privacy-content {
   border-bottom: 1px solid var(--color-border);
   padding: 24px;
 
@@ -22,7 +21,7 @@ page > privacy > privacy
   }
 }
 
-.privacy-title {
+.p-privacy-title {
   font-size: 1.125rem;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -33,7 +32,7 @@ page > privacy > privacy
     letter-spacing: 0.1em;
   }
 
-  @include f.mq() {
+  @include t.mq() {
     font-size: clamp(16px, 2.4vw, 20px);
 
     &--large {
@@ -42,16 +41,16 @@ page > privacy > privacy
   }
 }
 
-.privacy-text {
+.p-privacy-text {
   line-height: 1.8;
   margin-top: 12px;
 }
 
-.privacy-list {
+.p-privacy-list {
   margin-top: 12px;
 }
 
-.privacy-item {
+.p-privacy-item {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -65,11 +64,11 @@ page > privacy > privacy
   }
 }
 
-.privacy-item-text {
+.p-privacy-item-text {
 }
 
-.privacy-date {
+.p-privacy-date {
 }
 
-.privacy-name {
+.p-privacy-name {
 }

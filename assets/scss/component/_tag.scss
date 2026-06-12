@@ -1,20 +1,20 @@
-@use "../foundation" as f;
+@use "../foundation/tokens" as t;
 
 /*!
-component > entry-button
+component > tag
 ------------------------------
 */
-.tag-html {
+.c-tag-html {
   background-color: rgb(255, 166, 0);
   color: white;
 }
 
-.tag-css {
+.c-tag-css {
   background-color: rgb(0, 119, 255);
   color: white;
 }
 
-.tag-js {
+.c-tag-js {
   background-color: rgb(0, 255, 153);
   color: white;
 }

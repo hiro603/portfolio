@@ -1,11 +1,11 @@
-@use "../../foundation" as f;
+@use "../../foundation/tokens" as t;
 
 /*!
 page > detail > detail-design
 ------------------------------
 */
 
-.detail-design-text {
+.p-detail-design-text {
     margin-top: 20px;
 
     span {

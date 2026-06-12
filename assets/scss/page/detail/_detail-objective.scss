@@ -4,7 +4,7 @@
 page > detail > detail-objective
 ------------------------------
 */
-.detail-objective-content {
+.p-detail-objective-content {
   margin-top: 16px;
   @include f.mq() {
     display: grid;
@@ -13,7 +13,7 @@ page > detail > detail-objective
   }
 }
 
-.detail-objective-content-text {
+.p-detail-objective-content-text {
   line-height: 2;
   margin-top: 16px;
   font-size: 0.875rem;
@@ -27,7 +27,7 @@ page > detail > detail-objective
   }
 }
 
-.detail-objective-list {
+.p-detail-objective-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 60px;
@@ -57,35 +57,36 @@ page > detail > detail-objective
   }
 }
 
-.detail-objective-before,
-.detail-objective-after {
+.p-detail-objective-before,
+.p-detail-objective-after {
   padding: 16px;
   border-radius: 6px;
+  position: relative;
 }
 
-.detail-objective-before-title,
-.detail-objective-after-title {
+.p-detail-objective-before-title,
+.p-detail-objective-after-title {
   font-weight: bold;
 }
 
-.detail-objective-before-list,
-.detail-objective-after-list {
+.p-detail-objective-before-list,
+.p-detail-objective-after-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 20px;
 }
 
-.detail-objective-before {
+.p-detail-objective-before {
   background-color: var(--color-gray-light);
 }
 
-.detail-objective-after {
+.p-detail-objective-after {
   background-color: var(--color-gray);
   color: var(--color-white);
 }
 
-.detail-objective-list-item {
+.p-detail-objective-list-item {
   display: flex;
   align-items: baseline;
   gap: 5px;
@@ -101,8 +102,12 @@ page > detail > detail-objective
   }
 }
 
-.detail-objective-after-item {
+.p-detail-objective-after-item {
   &::before {
     background-color: var(--color-white);
   }
+}
+
+.p-detail-objective-before-list {
+  position: relative;
 }

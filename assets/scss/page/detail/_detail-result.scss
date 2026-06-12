@@ -1,21 +1,20 @@
-@use "../../foundation" as f;
-
+@use "../../foundation/tokens" as t;
 
 /*!
 page > detail > detail-result
 ------------------------------
 */
-.detail-result {
+.p-detail-result {
   background: #f7f7f7;
 
-  @include f.mq() {
+  @include t.mq() {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
 }
 
-.detail-result-btn-link {
+.p-detail-result-btn-link {
   padding: 16px 20px;
   font-weight: bold;
   width: 100%;
@@ -56,15 +55,15 @@ page > detail > detail-result
   }
 }
 
-.lead {
+.p-lead {
   margin-top: 20px;
 }
 
-.detail-result-list {
+.p-detail-result-list {
   margin-top: 24px;
 }
 
-.detail-result-item {
+.p-detail-result-item {
   border-left: 3px solid #111;
   padding-left: 12px;
   margin-top: 16px;
@@ -75,8 +74,8 @@ page > detail > detail-result
   }
 }
 
-.detail-result-btn {
-  @include f.mq() {
+.p-detail-result-btn {
+  @include t.mq() {
     display: none;
   }
 }

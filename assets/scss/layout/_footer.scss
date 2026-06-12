@@ -1,10 +1,10 @@
-@use "../foundation" as f;
+@use "../foundation/tokens" as t;
 
 /*!
 layout > footer
 ------------------------------
 */
-.footer {
+.l-footer {
   background-color: var(--color-gray);
   color: var(--color-white);
   padding: 32px;
@@ -14,52 +14,52 @@ layout > footer
 
   // &--detail {
   //     margin-top: 60px;
-  //     @include f.mq() {
+  //     @include t.mq() {
   //         margin-top: 80px;
   //     }
   // }
 }
 
-.footer-content {
+.l-footer-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
 
-  @include f.mq() {
+  @include t.mq() {
     flex-direction: row;
     gap: 50px;
     align-items: center;
   }
 }
 
-.footer-title {
+.l-footer-title {
   font-family: var(--font-family-en);
   font-weight: bold;
   letter-spacing: 0.05em;
   font-size: clamp(16px, 2.4vw, 24px);
 }
 
-.footer-copyright {
+.l-footer-copyright {
   font-size: 0.75rem;
   display: block;
 }
 
-.footer-list {
+.l-footer-list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 
-  @include f.mq() {
+  @include t.mq() {
     gap: 50px;
   }
 }
 
-.footer-item {
+.l-footer-item {
   width: 30px;
   aspect-ratio: 1 / 1;
 
-  @include f.mq() {
+  @include t.mq() {
     width: 40px;
   }
 }

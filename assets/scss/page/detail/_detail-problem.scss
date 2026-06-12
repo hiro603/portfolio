@@ -1,14 +1,14 @@
-@use "../../foundation" as f;
+@use "../../foundation/tokens" as t;
 
 /*!
 page > detail > detail-problem
 ------------------------------
 */
-.detail-problem {
+.p-detail-problem {
     background-color: var(--color-gray-light);
 }
 
-.detail-problem-title {
+.p-detail-problem-title {
     font-size: clamp(24px, 3vw, 32px);
     font-weight: bold;
     letter-spacing: 0.1em;
@@ -16,11 +16,11 @@ page > detail > detail-problem
     font-family: var(--font-family-en);
 }
 
-.detail-problem-list {
+.p-detail-problem-list {
     margin-top: 20px;
 }
 
-.detail-problem-item {
+.p-detail-problem-item {
     font-weight: bold;
     border-left: 3px solid #ccc;
     padding-left: 12px;

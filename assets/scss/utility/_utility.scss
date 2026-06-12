@@ -1,4 +1,4 @@
-@use "../foundation" as f;
+@use "../foundation/tokens" as t;
 
 /*!
 utility > utility
@@ -37,11 +37,16 @@ utility > utility
   background-repeat: no-repeat;
   transition: background-size 0.3s;
 
-  @include f.mq() {
+  @include t.mq() {
     @media (any-hover: hover) {
       &:hover {
         background-size: 100% 1px;
       }
     }
   }
+}
+
+.u-hidden {
+  position: absolute;
+  left: -9999px;
 }

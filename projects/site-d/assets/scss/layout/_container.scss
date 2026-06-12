@@ -1,0 +1,31 @@
+@use "../foundation" as f;
+
+/*!
+layout > container
+------------------------------
+*/
+.l-container {
+  width: min(100% - (var(--gutter-sm) * 2), var(--width-lg));
+  margin-inline: auto;
+
+  &--md {
+    width: min(100% - (var(--gutter-sm) * 2), var(--width-md));
+  }
+
+  &--sm {
+    width: min(100% - (var(--gutter-sm) * 2), var(--width-sm));
+
+  }
+
+  @media screen and (min-width: f.$bp-sm) {
+    width: min(100% - (var(--gutter-lg) * 2), var(--width-lg));
+
+    &--md {
+      width: min(100% - (var(--gutter-lg) * 2), var(--width-md));
+    }
+
+    &--sm {
+      width: min(100% - (var(--gutter-lg) * 2), var(--width-sm));
+    }
+  }
+}

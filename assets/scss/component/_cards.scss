@@ -1,15 +1,15 @@
-@use "../foundation" as f;
+@use "../foundation/tokens" as t;
 
 /*!
 component > cards
 ------------------------------
 */
-.card-list {
+.c-card-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
 
-  @include f.mq() {
+  @include t.mq() {
     flex-direction: row;
     gap: 40px;
   }
