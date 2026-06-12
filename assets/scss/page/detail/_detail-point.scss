@@ -4,10 +4,10 @@
 page > detail > detail-point
 ------------------------------
 */
-.detail-point {
+.p-detail-point {
 }
 
-.detail-point-wrap {
+.p-detail-point-wrap {
   @include t.mq() {
     display: grid;
     grid-template-columns: 40% 1fr;
@@ -15,14 +15,14 @@ page > detail > detail-point
   }
 }
 
-.detail-point-list {
+.p-detail-point-list {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.detail-point-list-item {
+.p-detail-point-list-item {
   font-size: 0.875rem;
   border-left: 3px solid var(--color-gray);
   padding-left: 12px;
@@ -37,7 +37,7 @@ page > detail > detail-point
   }
 }
 
-.detail-point-list-img {
+.p-detail-point-list-img {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;

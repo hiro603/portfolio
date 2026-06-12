@@ -5,14 +5,14 @@ page > detail > detail-development
 ------------------------------
 */
 
-.detail-development-list {
+.p-detail-development-list {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.detail-development-item {
+.p-detail-development-item {
     border-left: 3px solid var(--color-gray);
     padding-left: 12px;
     font-weight: bold;

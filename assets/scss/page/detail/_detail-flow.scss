@@ -4,13 +4,13 @@
 page > about > about-company
 ------------------------------
 */
-.detail-flow {
+.p-detail-flow {
   @include t.mq() {
     background-color: var(--color-gray);
   }
 }
 
-.detail-flow-list {
+.p-detail-flow-list {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -22,7 +22,7 @@ page > about > about-company
   }
 }
 
-.detail-flow-item {
+.p-detail-flow-item {
   display: grid;
   grid-template-columns: 24px 1fr;
   gap: 20px;
@@ -37,7 +37,7 @@ page > about > about-company
   }
 }
 
-.detail-flow-item--url {
+.p-detail-flow-item--url {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -54,7 +54,7 @@ page > about > about-company
   }
 }
 
-.detail-flow-item-img {
+.p-detail-flow-item-img {
   width: 24px;
 
   @include t.mq() {
@@ -62,13 +62,13 @@ page > about > about-company
   }
 }
 
-.detail-flow-item-content {
+.p-detail-flow-item-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.detail-flow-item-title {
+.p-detail-flow-item-title {
   line-height: 1;
   font-weight: bold;
 }

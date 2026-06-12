@@ -35,7 +35,7 @@
 //   [name, email, message].forEach(input => input.dispatchEvent(new Event('blur')));
 //   agree.dispatchEvent(new Event('change'));
 
-//   if (document.querySelectorAll('.error-message').length > 0) {
+//   if (document.querySelectorAll('.p-error-message').length > 0) {
 //     e.preventDefault(); // エラーがあれば送信を止める
 //   }
 //   // エラーがなければそのままNetlifyに送信される
@@ -44,7 +44,7 @@
 // // ユーティリティ
 // function showError(input, msg) {
 //   const error = document.createElement('span');
-//   error.className = 'error-message';
+//   error.className = 'p-error-message';
 //   error.textContent = msg;
 //   input.classList.add('is-error');
 //   input.parentNode.appendChild(error);
@@ -52,7 +52,7 @@
 
 // function clearError(input) {
 //   input.classList.remove('is-error');
-//   const error = input.parentNode.querySelector('.error-message');
+//   const error = input.parentNode.querySelector('.p-error-message');
 //   if (error) error.remove();
 // }
 

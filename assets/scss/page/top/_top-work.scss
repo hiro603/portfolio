@@ -4,13 +4,13 @@
 page > top > top-work
 ------------------------------
 */
-.top-work {
+.p-top-work {
 }
 
-.top-work-title {
+.p-top-work-title {
 }
 
-.top-work-list {
+.p-top-work-list {
   margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr;
@@ -23,7 +23,7 @@ page > top > top-work
   }
 }
 
-.top-work-item {
+.p-top-work-item {
   background-color: var(--color-gray-light);
   border-radius: 10px;
   transition: scale 0.3s;
@@ -33,21 +33,44 @@ page > top > top-work
       scale: 1.03;
     }
   }
+  
   img {
     border-radius: 10px;
     aspect-ratio: 357 / 238;
   }
 }
 
-.top-work-item-img {
-  imd {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.p-top-work-item-img {
+  &--coming-soon {
+    position: relative;
+    aspect-ratio: 357 / 238;
+    border-radius: 10px;
+    overflow: hidden;
+
+    // 背景だけにblurとopacityをかける
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: var(--color-gray);
+      opacity: 0.4;
+      filter: blur(3px);
+    }
   }
 }
 
-.top-work-item-content {
+.p-top-work-item-img-coming-soon-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: var(--color-white);
+  z-index: 1;
+}
+
+.p-top-work-item-content {
   padding: 20px;
 
   @include t.mq() {
@@ -55,7 +78,7 @@ page > top > top-work
   }
 }
 
-.top-work-item-title {
+.p-top-work-item-title {
   font-size: 1.375rem;
   font-weight: 500;
 
@@ -63,31 +86,31 @@ page > top > top-work
   }
 }
 
-.top-work-item-category {
+.p-top-work-item-category {
   font-size: 0.9375rem;
 }
 
-.top-work-item-description-link {
+.p-top-work-item-description-link {
   display: flex;
   gap: 10px;
 }
 
-.top-work-item-description-link-item {
+.p-top-work-item-description-link-item {
   font-size: 0.9375rem;
   font-family: var(--font-family-en);
 }
 
-.top-work-item-tags {
+.p-top-work-item-tags {
   font-size: 0.9375rem;
 }
 
-.top-work-item-tag {
+.p-top-work-item-tag {
   font-size: 0.8125rem;
   border-radius: 6px;
   padding: 2px 6px;
 }
 
-.top-work-item-button {
+.p-top-work-item-button {
   display: flex;
   justify-content: flex-end;
 }

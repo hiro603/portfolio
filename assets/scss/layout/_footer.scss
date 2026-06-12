@@ -4,7 +4,7 @@
 layout > footer
 ------------------------------
 */
-.footer {
+.l-footer {
   background-color: var(--color-gray);
   color: var(--color-white);
   padding: 32px;
@@ -20,7 +20,7 @@ layout > footer
   // }
 }
 
-.footer-content {
+.l-footer-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -32,19 +32,19 @@ layout > footer
   }
 }
 
-.footer-title {
+.l-footer-title {
   font-family: var(--font-family-en);
   font-weight: bold;
   letter-spacing: 0.05em;
   font-size: clamp(16px, 2.4vw, 24px);
 }
 
-.footer-copyright {
+.l-footer-copyright {
   font-size: 0.75rem;
   display: block;
 }
 
-.footer-list {
+.l-footer-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +55,7 @@ layout > footer
   }
 }
 
-.footer-item {
+.l-footer-item {
   width: 30px;
   aspect-ratio: 1 / 1;
 

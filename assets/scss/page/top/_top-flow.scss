@@ -4,14 +4,14 @@
 page > top > top-flow
 ------------------------------
 */
-.top-flow {
+.p-top-flow {
   background-color: var(--color-gray-light);
 }
 
-.top-flow-title {
+.p-top-flow-title {
 }
 
-.top-flow-list {
+.p-top-flow-list {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@ page > top > top-flow
   }
 }
 
-.top-flow-item {
+.p-top-flow-item {
   text-align: center;
   background-color: var(--color-white);
   width: 210px;
@@ -62,7 +62,7 @@ page > top > top-flow
   }
 }
 
-.top-flow-item-number {
+.p-top-flow-item-number {
   font-size: 2.5rem;
   font-weight: bold;
   color: var(--color-primary);
@@ -74,7 +74,7 @@ page > top > top-flow
   font-family: var(--font-family-en);
 }
 
-.top-flow-item-text {
+.p-top-flow-item-text {
   display: block;
   font-weight: 500;
   font-size: 1.25rem;

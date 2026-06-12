@@ -4,13 +4,13 @@
 page > top > top-skill
 ------------------------------
 */
-.top-skill {
+.p-top-skill {
 }
 
-.top-skill-title {
+.p-top-skill-title {
 }
 
-.top-skill-list {
+.p-top-skill-list {
   margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr;
@@ -23,7 +23,7 @@ page > top > top-skill
   }
 }
 
-.top-skill-item {
+.p-top-skill-item {
   background-color: var(--color-gray-light);
   border-radius: 100vh;
   padding: 20px;
@@ -32,7 +32,7 @@ page > top > top-skill
   box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
-.top-skill-item-text {
+.p-top-skill-item-text {
   font-size: 1.375rem;
   font-weight: bold;
   letter-spacing: 0.1em;
